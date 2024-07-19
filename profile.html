@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .profile-container {
+            padding: 40px;
+            background-color: rgba(248, 249, 250, 0.9);
+            border-radius: 8px;
+            box-shadow: #ffffff;
+            margin-top: 40px;
+        }
+        .profile-icon {
+            font-size: 150px;
+            color: black;
+            display: inline-block;
+            background-color: #ffffff;
+            border-radius: 50%;
+            padding: 15px;
+            box-shadow: #ffffff;
+            margin-top: 20px;
+        }
+        .section-header {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #343a40;
+        }
+        .list-group-item {
+            border: none;
+            border-bottom: 1px solid #dee2e6;
+            padding: 15px;
+        }
+        .card-custom {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .card-header {
+            background-color: #f8f9fa;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .card-body {
+            font-size: 0.875rem;
+            padding: 15px;
+        }
+        .btn-custom {
+            margin: 5px 0;
+            width: auto;
+            font-size: 0.875rem;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+        .btn-primary-custom {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary-custom:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+        .btn-secondary-custom {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+        .btn-secondary-custom:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+        .btn-info-custom {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+        .btn-info-custom:hover {
+            background-color: #138496;
+            border-color: #117a8b;
+        }
+        .btn-warning-custom {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+        .btn-warning-custom:hover {
+            background-color: #e0a800;
+            border-color: #d39e00;
+        }
+        .btn-success-custom {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        .btn-success-custom:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+        .btn-danger-custom {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+        .btn-danger-custom:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+        .rating {
+            font-size: 1.2rem;
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <div class="container profile-container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="profile-icon">
+                    <i class="bi bi-person-circle"></i>
+                </div>
+                <h2 class="mt-3">Arunima Kumar</h2>
+                <p class="text-muted">User since 2023</p>
+                <div class="rating mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span class="ml-2">4.5 / 5</span>
+                </div>
+                <p><strong>Location:</strong> Kochi</p>
+                <p><strong>Member Since:</strong> January 2023</p>
+            </div>
+            <div class="col-md-8">
+                <h3 class="section-header">Personal Information</h3>
+                <p><strong>Email:</strong> arunima246@gmail.com</p>
+                <p><strong>Phone:</strong> +91 3434343434</p>
+                
+                <h3 class="section-header">Bookings</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button class="btn btn-primary btn-custom btn-primary-custom" type="button" data-toggle="collapse" data-target="#bookingHistory" aria-expanded="false" aria-controls="bookingHistory">
+                            Booking History
+                        </button>
+                        <div class="collapse" id="bookingHistory">
+                            <div class="card card-custom">
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Booking 1: 01/01/2024 - Pick-Up: Vytilla - Drop-Off: Marine Drive - Car: Toyota Innova Crysta - Status: Completed</li>
+                                        <li class="list-group-item">Booking 2: 15/02/2024 - Pick-Up: Hill Palace Museum - Drop-Off: Bolgatty Palace - Car: Mahindra Marazzo - Status: Completed</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-info btn-custom btn-info-custom" type="button" data-toggle="collapse" data-target="#upcomingBookings" aria-expanded="false" aria-controls="upcomingBookings">
+                            Upcoming Bookings
+                        </button>
+                        <div class="collapse" id="upcomingBookings">
+                            <div class="card card-custom">
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Booking 3: 20/07/2024 - Pick-Up: Location Vytilla - Drop-Off: Fort Kochi Hyundai Aura - Car: Hatchback</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="section-header">Account Settings</h3>
+                <a href="#" class="btn btn-primary btn-custom btn-primary-custom">Edit Profile</a>
+                <a href="#" class="btn btn-info btn-custom btn-info-custom" data-toggle="modal" data-target="#changePasswordModal">Change Password</a>
+                <a href="#" class="btn btn-info btn-custom btn-info-custom">Manage Payment Methods</a>
+                
+                <h3 class="section-header">Support and Feedback</h3>
+                <a href="#" class="btn btn-warning btn-custom btn-warning-custom">Contact Support</a>
+                <a href="#" class="btn btn-success btn-custom btn-success-custom">Leave Feedback</a>
+                
+                <h3 class="section-header">Logout</h3>
+                <!-- Sign Out Button with Modal Trigger -->
+                <button class="btn btn-danger btn-custom btn-danger-custom" data-toggle="modal" data-target="#logoutModal">Sign Out</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Change Password Modal -->
+    <div class="modal fade" id="changePasswordModal" tabindex="-1" role="dialog" aria-labelledby="changePasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="changePasswordModalLabel">Change Password</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="currentPassword">Current Password</label>
+                            <input type="password" class="form-control" id="currentPassword" placeholder="Enter current password">
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">New Password</label>
+                            <input type="password" class="form-control" id="newPassword" placeholder="Enter new password">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm New Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm new password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logoutModalLabel">Confirm Logout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to log out?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <a href="logout.html" class="btn btn-danger">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

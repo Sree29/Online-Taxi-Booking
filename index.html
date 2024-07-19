@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Online Taxi </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+  
+  <body>
+  
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Online<span>Taxi</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+  
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="car.html" class="nav-link">Our Cars</a></li>
+            <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-user"></i> <!-- Profile icon -->
+              </a>
+              <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                <a class="dropdown-item" href="profile.html">My Profile</a>
+                <a class="dropdown-item" href="settings.html">Settings</a>
+                <a class="dropdown-item" href="logout.html">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    
+    <!-- END nav -->
+    
+    <div class="hero-wrap ftco-degree-bg" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
+          <div class="col-lg-8 ftco-animate">
+          	<div class="text w-100 text-center mb-md-5 pb-md-5">
+	            <h1 class="mb-4">Fast &amp; Easy Way To Book A Taxi</h1>
+	            <p style="font-size: 18px;">Embark on your next adventure with our hassle-free car booking service. Find the perfect ride for every destination, ensuring your journey is as memorable as the destination itself.</p>
+	            <a href="https://vimeo.com/45830194" class="icon-wrap popup-vimeo d-flex align-items-center mt-4 justify-content-center">
+	            	<div class="icon d-flex align-items-center justify-content-center">
+	            		<span class="ion-ios-play"></span>
+	            	</div>
+	            	<div class="heading-title ml-5">
+		            	<span>Easy steps for booking a car</span>
+	            	</div>
+	            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section ftco-no-pt bg-light">
+      <div class="container">
+          <div class="row no-gutters">
+              <div class="col-md-12 featured-top">
+                  <div class="row no-gutters">
+                      <div class="col-md-4 d-flex align-items-center">
+                          <form action="#" class="request-form ftco-animate bg-primary">
+                              <h2>Make your trip</h2>
+                              <div class="form-group">
+                                  <label for="" class="label">Pick-up location</label>
+                                  <input type="text" class="form-control" placeholder="City, Airport, Station, etc">
+                              </div>
+                              <div class="form-group">
+                                  <label for="" class="label">Drop-off location</label>
+                                  <input type="text" class="form-control" placeholder="City, Airport, Station, etc">
+                              </div>
+                              <div class="d-flex">
+                                  <div class="form-group mr-2">
+                                      <label for="" class="label">Pick-up date</label>
+                                      <input type="text" class="form-control" id="book_pick_date" placeholder="Date">
+                                  </div>
+                                  <div class="form-group ml-2">
+                                      <label for="" class="label">Drop-off date</label>
+                                      <input type="text" class="form-control" id="book_off_date" placeholder="Date">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="" class="label">Pick-up time</label>
+                                  <input type="text" class="form-control" id="time_pick" placeholder="Time">
+                              </div>
+                              <div class="form-group">
+                                  <button type="button" class="btn btn-secondary py-3 px-4" data-toggle="modal" data-target="#loginModal">Book A Car Now</button>
+                              </div>
+                          </form>
+                      </div>
+                      <div class="col-md-8 d-flex align-items-center">
+                          <div class="services-wrap rounded-right w-100">
+                              <h3 class="heading-section mb-4">Better Way to Rent Your Perfect Cars</h3>
+                              <div class="row d-flex mb-4">
+                                  <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                                      <div class="services w-100 text-center">
+                                          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+                                          <div class="text w-100">
+                                              <h3 class="heading mb-2">Choose Your Pickup Location</h3>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                                      <div class="services w-100 text-center">
+                                          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-handshake"></span></div>
+                                          <div class="text w-100">
+                                              <h3 class="heading mb-2">Select the Best Deal</h3>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                                      <div class="services w-100 text-center">
+                                          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-rent"></span></div>
+                                          <div class="text w-100">
+                                              <h3 class="heading mb-2">Book your car </h3>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <p><a href="#" class="btn btn-primary py-3 px-4">Reserve Your Perfect Car</a></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel" style="color: white;">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-success">Login</button>
+                </form>
+                <p class="mt-3">
+                    <a href="#" data-toggle="modal" data-target="#forgotPasswordModal" data-dismiss="modal">Forgot Password?</a>
+                </p>
+                <p class="mt-3">New user? <a href="#" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Register here</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registerModalLabel" style="color: white;">Register</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="registerEmail">Email address</label>
+                        <input type="email" class="form-control" id="registerEmail" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+                        <input type="password" class="form-control" id="registerPassword" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="registerConfirmPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Confirm Password">
+                    </div>
+                    <button type="submit" class="btn btn-success">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="forgotPasswordModalLabel" style="color: white;">New Password</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="forgotPasswordEmail">Registered Email address</label>
+                        <input type="email" class="form-control" id="forgotPasswordEmail" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">New Password</label>
+                        <input type="password" class="form-control" id="newPassword" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmNewPassword">Confirm New Password</label>
+                        <input type="password" class="form-control" id="confirmNewPassword" placeholder="Confirm Password">
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="ftco-section ftco-no-pt bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+        <h2 class="mb-2">Featured Vehicles</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="carousel-car owl-carousel">
+          <div class="item">
+            <div class="car-wrap rounded ftco-animate">
+              <div class="img rounded d-flex align-items-end" style="background-image: url(images/Maruti\ Swift.webp);">
+              </div>
+              <div class="text">
+                <h2 class="mb-0"><a href="#">Maruti Swift</a></h2>
+                <div class="d-flex mb-3">
+                  <span class="cat">Maruti</span>
+                  <p class="price ml-auto">₹3000 <span>/day</span></p>
+                </div>
+                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="car-wrap rounded ftco-animate">
+              <div class="img rounded d-flex align-items-end" style="background-image: url(images/Hyundai\ Creta.webp);">
+              </div>
+              <div class="text">
+                <h2 class="mb-0"><a href="#">Hyundai Creta</a></h2>
+                <div class="d-flex mb-3">
+                  <span class="cat">Hyundai</span>
+                  <p class="price ml-auto">₹4000 <span>/day</span></p>
+                </div>
+                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="car-wrap rounded ftco-animate">
+              <div class="img rounded d-flex align-items-end" style="background-image: url(images/Tata\ Nexon.webp);">
+              </div>
+              <div class="text">
+                <h2 class="mb-0"><a href="#">Tata Nexon</a></h2>
+                <div class="d-flex mb-3">
+                  <span class="cat">Tata</span>
+                  <p class="price ml-auto">₹3500 <span>/day</span></p>
+                </div>
+                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="car-wrap rounded ftco-animate">
+              <div class="img rounded d-flex align-items-end" style="background-image: url(images/Maruti\ Baleno.webp);">
+              </div>
+              <div class="text">
+                <h2 class="mb-0"><a href="#">Maruti Baleno</a></h2>
+                <div class="d-flex mb-3">
+                  <span class="cat">Maruti</span>
+                  <p class="price ml-auto">₹3200 <span>/day</span></p>
+                </div>
+                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="car-wrap rounded ftco-animate">
+              <div class="img rounded d-flex align-items-end" style="background-image: url(images/Mahindra\ Thar.webp);">
+              </div>
+              <div class="text">
+                <h2 class="mb-0"><a href="#">Mahindra Thar</a></h2>
+                <div class="d-flex mb-3">
+                  <span class="cat">Mahindra</span>
+                  <p class="price ml-auto">₹5000 <span>/day</span></p>
+                </div>
+                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="ftco-section ftco-about">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/about.jpg);">
+        </div>
+        <div class="col-md-6 wrap-about ftco-animate">
+          <div class="heading-section heading-section-white pl-md-5">
+            <span class="subheading">About us</span>
+            <h2 class="mb-4">Welcome to Online Taxi</h2>
+
+            <p>Since its establishment in 1999, Savaari has been a strong advocate of experiential and road travel, offering a unique and immersive experience beyond being just a logistics provider. Our commitment to the car rental service industry spans 16 years, where we've gone beyond being a mere taxi service provider. We see road travel as an opportunity to observe gradual changes in culture, climate, and scenery, appreciating remarkable richness and diversity while acknowledging underlying continuity. Savaari highly values this sensitivity, appreciation for diversity, and spirit of adventure, actively promoting and embodying these principles. Whether you're looking to rent a car or explore Savaari car rentals, our mission is clear: 'Making India fall in love with Road Travel. </p>
+            <p>To ensure last-mile connectivity, we are present in more than 2000 cities across India.</p>
+            <p><a href="#" class="btn btn-primary py-3 px-4">Search Vehicle</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <section class="ftco-section">
+          <div class="container">
+            <div class="row justify-content-center mb-5">
+              <div class="col-md-7 text-center heading-section ftco-animate">
+                <span class="subheading"><h4 style="color:blue;">Services</h4></span>
+                <h2 class="mb-3">Our Latest Services</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="services services-2 w-100 text-center">
+                  <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+                  <div class="text w-100">
+                    <h3 class="heading mb-2">Local Car Rentals</h3>
+                    <p>Discover convenient local car rental services tailored to your needs, ensuring seamless transportation for every journey.</p>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="col-md-3">
+                <div class="services services-2 w-100 text-center">
+                  <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+                  <div class="text w-100">
+                    <h3 class="heading mb-2">Airport Taxi</h3>
+                    <p>Reliable local airport taxi service providing prompt and comfortable transportation to and from airports, ensuring a stress-free travel experience.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="services services-2 w-100 text-center">
+                  <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+                  <div class="text w-100">
+                    <h3 class="heading mb-2">Out Station Taxi</h3>
+                    <p>Experience seamless travel between cities with our trusted outstation taxi service, featuring comfortable rides, experienced drivers, and competitive pricing to ensure a stress-free journey.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="services services-2 w-100 text-center">
+                  <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+                  <div class="text w-100">
+                    <h3 class="heading mb-2">Corporte Car Rental</h3>
+                    <p>Elevate your business travel experience with our dedicated corporate car rental service, offering tailored solutions, premium vehicles, and seamless booking management to support your professional needs.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <section class="ftco-counter ftco-section img bg-light" id="section-counter">
+			<div class="overlay"></div>
+    	<div class="container">
+    		<div class="row">
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="25">0</strong>
+                <span>Year <br>Experienced</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="1090">0</strong>
+                <span>Total <br>Cars</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="2590">0</strong>
+                <span>Happy <br>Customers</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text d-flex align-items-center">
+                <strong class="number" data-number="67">0</strong>
+                <span>Total <br>Branches</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    	</div>
+    </section>	
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2"><a href="#" class="logo">Online<span>Taxi</span></a></h2>
+              <p>Reliable rides, anytime, anywhere - Your journey, our priority.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Home</a></li>
+                <li><a href="#" class="py-2 d-block">About</a></li>
+                <li><a href="#" class="py-2 d-block">Services</a></li>
+                <li><a href="#" class="py-2 d-block">Contact</a></li>
+                <li><a href="#" class="py-2 d-block">Our Cars</a></li>
+                <li><a href="#" class="py-2 d-block">Pricing</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Have a Question?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon icon-map-marker"></span><span class="text">123 Street Kerala, India</span></li>
+                  <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 2323232323</span></a></li>
+                  <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@onlinetaxi.com</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Online Taxi</strong> <span>All Rights Reserved</span></p>
+      
+    </div>
+  </footer>
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

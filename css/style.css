@@ -5349,7 +5349,7 @@ a.close.disabled {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #007bff !important; }
+  background-color: #ffffff !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -9946,3 +9946,380 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/*first car at index*/
+
+    .card {
+      border-radius: 20px; /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      margin-bottom: 20px; /* Spacing between cards */
+      background-color:#01d28e;
+      
+  }
+  .icon {
+    font-size: 40px; /* Adjust icon size */
+    color: white; /* Change icon color */
+    margin-bottom: 10px; /* Space between icon and heading */
+}
+
+.custom-card {
+    border-radius: 10px; /* Custom border radius */
+    border: 1px solid black; /* Black border */
+    width: 80%; /* Adjust the width of the card */
+    padding: 15px; /* Adjust padding */
+    margin: 0 auto 20px; /* Center the card and add bottom margin */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for transform and shadow */
+}
+
+.custom-card:hover {
+    transform: translateY(-10px); /* Move the card up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+.custom-card .card-body {
+    padding: 15px; /* Adjust the padding inside the card */
+}
+
+.custom-card .icon {
+    font-size: 30px; /* Reduce icon size */
+    margin-bottom: 10px; /* Adjust spacing for consistency */
+}
+
+.custom-card .card-title {
+    font-size: 18px; /* Adjust font size of the card title */
+    margin: 0; /* Remove default margin */
+}
+
+.btn-primary {
+    border: 2px solid #000; /* Black border with 2px width */
+    border-radius: 8px; /* Rounded corners */
+    color: #000; /* Set text color to black */
+    background-color: transparent; /* Transparent background */
+    padding: 10px 20px; /* Adjust padding */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Add hover effect for the button */
+.btn-primary:hover {
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* White text color on hover */
+    border-color: #000; /* Maintain border color on hover */
+}
+
+/*car style*/
+
+.car-wrap {
+  position: relative; /* To position overlay elements */
+  overflow: hidden;  /* Ensure the overlay doesn't go outside the card boundaries */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for transform and shadow */
+  border: 1px solid black; /* Add a light gray border */
+  border-radius: 16px; /* Rounded corners for a sleek look */
+}
+
+.car-wrap::before {
+  content: ''; /* Create an empty pseudo-element */
+  position: absolute; /* Position it absolutely to cover the entire card */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(173, 216, 230, 0.8); /* Light blue overlay with opacity */
+  opacity: 0; /* Start with invisible overlay */
+  transition: opacity 0.3s; /* Smooth transition for overlay visibility */
+  z-index: 1; /* Ensure it’s on top of other content */
+}
+
+.car-wrap:hover::before {
+  opacity: 1; /* Make the overlay visible on hover */
+}
+
+.car-wrap:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for effect */
+}
+
+.car-wrap .text {
+  position: relative; /* Ensure text is above the overlay */
+  z-index: 2; /* Ensure text is above the overlay */
+  padding: 10px; /* Add padding to the text for better readability */
+  background: transparent; /* Remove any background color from text container */
+}
+
+/* Car name in black */
+.car-wrap .text h2 a {
+  color: #000; /* Car name color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Ensure company name and price are black */
+.car-wrap .text .cat,
+.car-wrap .text .price {
+  color: #000; /* Change color to black */
+}
+
+/* Ensure buttons have consistent styling */
+.car-wrap .text .btn-primary,
+.car-wrap .text .btn-secondary {
+  color: #000; /* Button text color */
+}
+
+.car-wrap .text .btn-primary:hover,
+.car-wrap .text .btn-secondary:hover {
+  background-color: #fff; /* Change button background color on hover */
+  color: #007bff; /* Change button text color on hover */
+}
+
+
+
+
+/* service in index page */
+
+/* Ensure all cards have the same height and proper alignment */
+.services-card {
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  background-color: #01d28e; /* Background color of the card */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition */
+  height: 100%; /* Ensures all cards are the same height */
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  justify-content: space-between; /* Distribute space between items */
+  border: 1px solid black;
+}
+
+/* Card body styles */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align content horizontally */
+  padding: 0.75rem; /* Adjust padding as needed */
+  color: #fff; /* Text color inside the card */
+}
+
+/* Styling for the services card */
+.services-card {
+  background-color: #01d28e; /* Card background color */
+  border-radius: 10px; /* Rounded corners for the card */
+  border: 1px solid black; /* Black border for the card */
+  padding: 20px; /* Padding inside the card */
+  margin-bottom: 20px; /* Space below each card */
+  color: #fff; /* Text color inside the card */
+}
+
+/* Circle container for the icon */
+/* Styling for the services card */
+.services-card {
+  background-color: #01d28e; /* Card background color */
+  border-radius: 10px; /* Rounded corners for the card */
+  border: 1px solid black; /* Black border for the card */
+  padding: 20px; /* Padding inside the card */
+  margin-bottom: 20px; /* Space below each card */
+  color: #fff; /* Text color inside the card */
+}
+
+.icon {
+  font-size: 2rem; /* Adjust icon size */
+  color: #fff; /* Icon color */
+  margin: 0.5rem 0; /* Reduced space above and below the icon */
+}
+
+
+/* Heading styles */
+.heading {
+  font-size: 1.25rem; /* Adjust heading size */
+  color: #fff; /* Text color for the heading */
+  margin-bottom: 0.5rem; /* Space below heading */
+  text-align: center; /* Center align heading */
+}
+
+/* Content styles */
+.card-body p {
+  color: #fff; /* Text color for the paragraph */
+  margin-bottom: 0; /* Remove bottom margin */
+  text-align: center; /* Center align paragraph text */
+}
+/* Keyframes for the bounce effect */
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px); /* Move up */
+  }
+  100% {
+      transform: translateY(0); /* Move back down */
+  }
+}
+
+/* Apply the bounce effect on hover */
+.services-card:hover {
+  animation: bounce 0.6s ease-in-out; /* Duration and easing function */
+}
+
+
+/* about testimonials*/
+/* Ensure the container takes full width and height of the viewport */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carousel-testimony {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Add space between cards */
+}
+
+.carousel-testimony .item {
+  flex: 1 1 300px; /* Flex-grow and flex-shrink with a base size */
+}
+
+.testimony-wrap {
+  background-color: #01d28e; /* Background color of the card */
+  border: 1px solid #000; /* Black border around the card */
+  border-radius: 15px; /* Increase border-radius for more rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  padding: 20px;
+  transition: transform 0.3s ease-in-out; /* Smooth transform */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space evenly */
+  min-height: 400px; /* Ensure all cards have a minimum height */
+  color: #fff; /* Set text color to white */
+}
+
+.testimony-wrap:hover {
+  transform: translateY(-10px); /* Move the card up on hover */
+}
+
+.user-img {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 0 auto; /* Center the image */
+  margin-bottom: 10px; /* Space between image and content */
+  border: 3px solid #000; /* Black border color around the image */
+}
+
+.text {
+  color: #fff; /* Text color for readability */
+  flex: 1; /* Ensure the text section takes up available space */
+  padding-bottom: 60px; /* Ensure there’s space for name at the bottom */
+}
+
+.name {
+  font-weight: bold;
+  color: #fff; /* Text color for name */
+  margin-top: 10px; /* Space between text and name */
+}
+
+
+
+/*Contact*/
+
+.contact-card {
+  background-color: #01d28e; /* Background color for the card */
+  border: 1px solid black; /* Black border */
+  border-radius: 10px; /* Rounded corners */
+  color: #fff; /* Text color */
+  transition: transform 0.3s ease-in-out; /* Smooth transform */
+  padding: 20px; /* Padding inside the card */
+  margin-bottom: 20px; /* Space below each card */
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem; /* Circle diameter */
+  height: 4rem; /* Circle diameter */
+  background-color: #fff; /* Circle background color */
+  border-radius: 50%; /* Makes the container circular */
+  border: 2px solid black; /* Black border around the circle */
+}
+
+.icon {
+  font-size: 2rem; /* Adjust icon size */
+  color: #01d28e; /* Icon color */
+}
+
+.text-white {
+  color: #fff; /* Ensure text is white */
+}
+
+a.text-white {
+  color: #fff; /* Ensure links are white */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.contact-form .form-control {
+  border-radius: 5px; /* Add rounded corners to form controls */
+}
+
+.contact-form .btn-primary {
+  background-color: #01d28e; /* Button background color */
+  border-color: #01d28e; /* Button border color */
+  border-radius: 5px; /* Add rounded corners to the button */
+}
+
+
+
+.services-wrap {
+  border: 1px solid #fff; /* You can change the border width, style, and color as needed */
+  padding: 20px; /* Optional: Adds some padding inside the border */
+  border-radius: 10px; /* Optional: Adds rounded corners if needed */
+}
+
+.icon {
+  font-size: 30px; /* Adjust icon size */
+  color: white; /* Change icon color */
+  margin-bottom: 10px; /* Space between icon and heading */
+}
+
+
+.contact-section .border {
+  background-color: #01d28e; /* Set the background color */
+  color: #fff; /* Set text color to white for better contrast */
+  border: 1px solid #01d82e; /* Optional: Add border of the same color */
+}
+
+.contact-section .icon span {
+  color: #fff; /* Ensure icons are white for contrast */
+}
+.contact-section .icon {
+  width: 50px; /* Width of the circle */
+  height: 50px; /* Height of the circle */
+  background-color: #fff; /* Circle background color */
+  color: #01d82e; /* Icon color */
+  border-radius: 50%; /* Make the circle */
+  display: flex; /* Use flexbox to center the icon */
+  align-items: center; /* Center the icon vertically */
+  justify-content: center; /* Center the icon horizontally */
+  font-size: 24px; /* Adjust icon size */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+
+.booking-column {
+  background-color:black; /* Light blue color */
+  padding: 20px; /* Add padding for better spacing */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  border-radius: 10px;
+  border-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+

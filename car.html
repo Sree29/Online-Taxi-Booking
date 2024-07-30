@@ -25,25 +25,44 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .navbar-brand img {
+          height: 100px;
+          width: 100px;
+        }
+        .navbar {
+          padding: 0,0,0,0; /* Adjust padding if needed */
+        }
+      </style>
   </head>
   <body>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Online<span>Taxi</span></a>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/taxiii.png" alt="Online Taxi Logo" style="height: 100px; width: 100px;">
+                <span style="color:black;">City</span><span style="color:var(--yellow);">Drivers</span>
+              </a>
+	      
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-           
-              <li class="nav-item active"><a href="car.html" class="nav-link">Our Cars</a></li>
-	          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-              <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"> <a href="index.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+                    onmouseout="this.style.color='black';">Home</a></a></li>
+                  <li class="nav-item"><a href="about.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+                    onmouseout="this.style.color='black';">About</a></li>
+                  <li class="nav-item"><a href="services.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+                    onmouseout="this.style.color='black';">Services</a></li>
+                  
+                  <li class="nav-item active"><a href="car.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+                    onmouseout="this.style.color='black';">Our Cars</a></li>
+                  <li class="nav-item"><a href="pricing.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+                    onmouseout="this.style.color='black';">Pricing</a></li>
+                  <li class="nav-item"><a href="contact.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+                    onmouseout="this.style.color='black';">Contact</a></li>
 	         
 	        </ul>
 	      </div>
@@ -51,13 +70,13 @@
 	  </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/service_image.jpeg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/car_new.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
           <div class="col-md-9 ftco-animate pb-5">
           	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Cars <i class="ion-ios-arrow-forward"></i></span></p>
-            <h1 class="mb-3 bread">Choose Your Car</h1>
+            <h1 class="mb-3 bread"><b>Choose Your Car</b></h1>
           </div>
         </div>
       </div>
@@ -72,12 +91,12 @@
                         <div class="img rounded d-flex align-items-end" style="background-image: url(images/Toyota\ Innova\ Crysta.webp);"></div>
                         <div class="text">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h2 class="mb-0"><a href="car-single.html">Toyota Innova</a></h2>
+                                <h2 class="mb-0"><a href="car-single.html"><b>Toyota Innova</b></a></h2>
                                 <p class="price mb-0">₹4000 <span>/day</span></p>
                             </div>
                             <p class="d-flex mb-0 d-block">
-                                <a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
-                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a>
+                                <a href="#" class="btn btn-primary py-2 mr-1"><b>Book now</b></a>
+                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1"><b>Details</b></a>
                             </p>
                         </div>
                     </div>
@@ -89,12 +108,12 @@
                         <div class="img rounded d-flex align-items-end" style="background-image: url(images/Mahindra-Verito.webp);"></div>
                         <div class="text">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h2 class="mb-0"><a href="car-single.html">Mahindra Varito</a></h2>
+                                <h2 class="mb-0"><a href="car-single.html"><b>Mahindra Varito</b></a></h2>
                                 <p class="price mb-0">₹3000 <span>/day</span></p>
                             </div>
                             <p class="d-flex mb-0 d-block">
-                                <a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
-                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a>
+                                <a href="#" class="btn btn-primary py-2 mr-1"><b>Book now</b></a>
+                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1"><b>Details</b></a>
                             </p>
                         </div>
                     </div>
@@ -106,12 +125,12 @@
                         <div class="img rounded d-flex align-items-end" style="background-image: url(images/Suzuki\ Swift\ Dzire1.webp);"></div>
                         <div class="text">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h2 class="mb-0"><a href="car-single.html">Suzuki Swift Dzire</a></h2>
+                                <h2 class="mb-0"><a href="car-single.html"><b>Suzuki Swift Dzire</b></a></h2>
                                 <p class="price mb-0">₹4000 <span>/day</span></p>
                             </div>
                             <p class="d-flex mb-0 d-block">
-                                <a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
-                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a>
+                                <a href="#" class="btn btn-primary py-2 mr-1"><b>Book now</b></a>
+                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1"><b>Details</b></a>
                             </p>
                         </div>
                     </div>
@@ -123,12 +142,12 @@
                         <div class="img rounded d-flex align-items-end" style="background-image: url(images/Ford\ Fiesta_1.webp);"></div>
                         <div class="text">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h2 class="mb-0"><a href="car-single.html">Ford Fiesta</a></h2>
+                                <h2 class="mb-0"><a href="car-single.html"><b>Ford Fiesta</b></a></h2>
                                 <p class="price mb-0">₹4500 <span>/day</span></p>
                             </div>
                             <p class="d-flex mb-0 d-block">
-                                <a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
-                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a>
+                                <a href="#" class="btn btn-primary py-2 mr-1"><b>Book now</b></a>
+                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1"><b>Details</b></a>
                             </p>
                         </div>
                     </div>
@@ -140,12 +159,12 @@
                         <div class="img rounded d-flex align-items-end" style="background-image: url(images/Innova\ 7+1.webp);"></div>
                         <div class="text">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h2 class="mb-0"><a href="car-single.html">Innova 7+1</a></h2>
+                                <h2 class="mb-0"><a href="car-single.html"><b>Innova 7+1</b></a></h2>
                                 <p class="price mb-0">₹3000 <span>/day</span></p>
                             </div>
                             <p class="d-flex mb-0 d-block">
-                                <a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
-                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a>
+                                <a href="#" class="btn btn-primary py-2 mr-1"><b>Book now</b></a>
+                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1"><b>Details</b></a>
                             </p>
                         </div>
                     </div>
@@ -157,12 +176,12 @@
                         <div class="img rounded d-flex align-items-end" style="background-image: url(images/Maruti\ Baleno.webp);"></div>
                         <div class="text">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h2 class="mb-0"><a href="car-single.html">Maruti Baleno</a></h2>
+                                <h2 class="mb-0"><a href="car-single.html"><b>Maruti Baleno</b></a></h2>
                                 <p class="price mb-0">₹3000 <span>/day</span></p>
                             </div>
                             <p class="d-flex mb-0 d-block">
-                                <a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
-                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a>
+                                <a href="#" class="btn btn-primary py-2 mr-1"><b>Book now</b></a>
+                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1"><b>Details</b></a>
                             </p>
                         </div>
                     </div>
@@ -174,12 +193,12 @@
                         <div class="img rounded d-flex align-items-end" style="background-image: url(images/Hyudai\ Aura.webp);"></div>
                         <div class="text">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h2 class="mb-0"><a href="car-single.html">Hyundai Aura</a></h2>
+                                <h2 class="mb-0"><a href="car-single.html"><b>Hyundai Aura</b></a></h2>
                                 <p class="price mb-0">₹3000 <span>/day</span></p>
                             </div>
                             <p class="d-flex mb-0 d-block">
-                                <a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
-                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a>
+                                <a href="#" class="btn btn-primary py-2 mr-1"><b>Book now</b></a>
+                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1"><b>Details</b></a>
                             </p>
                         </div>
                     </div>
@@ -191,12 +210,12 @@
                         <div class="img rounded d-flex align-items-end" style="background-image: url(images/Hyundai\ Creta.webp);"></div>
                         <div class="text">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h2 class="mb-0"><a href="car-single.html">Hyundai Creta</a></h2>
+                                <h2 class="mb-0"><a href="car-single.html"><b>Hyundai Creta</b></a></h2>
                                 <p class="price mb-0">₹3500 <span>/day</span></p>
                             </div>
                             <p class="d-flex mb-0 d-block">
-                                <a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
-                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a>
+                                <a href="#" class="btn btn-primary py-2 mr-1"><b>Book now</b></a>
+                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1"><b>Details</b></a>
                             </p>
                         </div>
                     </div>
@@ -208,12 +227,12 @@
                         <div class="img rounded d-flex align-items-end" style="background-image: url(images/Maruti\ Suzuki\ Alto.webp);"></div>
                         <div class="text">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h2 class="mb-0"><a href="car-single.html">Maruti Suzuki Alto</a></h2>
+                                <h2 class="mb-0"><a href="car-single.html"><b>Maruti Suzuki Alto</b></a></h2>
                                 <p class="price mb-0">₹4000 <span>/day</span></p>
                             </div>
                             <p class="d-flex mb-0 d-block">
-                                <a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
-                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a>
+                                <a href="#" class="btn btn-primary py-2 mr-1"><b>Book now</b></a>
+                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1"><b>Details</b></a>
                             </p>
                         </div>
                     </div>
@@ -225,12 +244,12 @@
                         <div class="img rounded d-flex align-items-end" style="background-image: url(images/Maruti\ Swift.webp);"></div>
                         <div class="text">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h2 class="mb-0"><a href="car-single.html">Maruti Swift</a></h2>
+                                <h2 class="mb-0"><a href="car-single.html"><b>Maruti Swift</b></a></h2>
                                 <p class="price mb-0">₹3500 <span>/day</span></p>
                             </div>
                             <p class="d-flex mb-0 d-block">
-                                <a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
-                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a>
+                                <a href="#" class="btn btn-primary py-2 mr-1"><b>Book now</b></a>
+                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1"><b>Details</b></a>
                             </p>
                         </div>
                     </div>
@@ -242,12 +261,12 @@
                         <div class="img rounded d-flex align-items-end" style="background-image: url(images/Tata\ Nexon.webp);"></div>
                         <div class="text">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h2 class="mb-0"><a href="car-single.html">Tata Nexon</a></h2>
+                                <h2 class="mb-0"><a href="car-single.html"><b>Tata Nexon</b></a></h2>
                                 <p class="price mb-0">₹6000 <span>/day</span></p>
                             </div>
                             <p class="d-flex mb-0 d-block">
-                                <a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
-                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a>
+                                <a href="#" class="btn btn-primary py-2 mr-1"><b>Book now</b></a>
+                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1"><b>Details</b></a>
                             </p>
                         </div>
                     </div>
@@ -259,12 +278,12 @@
                         <div class="img rounded d-flex align-items-end" style="background-image: url(images/Toyota\ Innova\ Crysta.webp);"></div>
                         <div class="text">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h2 class="mb-0"><a href="car-single.html">R=Totyota Innova Cresta</a></h2>
+                                <h2 class="mb-0"><a href="car-single.html"><b>Totyota Innova Cresta</b></a></h2>
                                 <p class="price mb-0">₹3500 <span>/day</span></p>
                             </div>
                             <p class="d-flex mb-0 d-block">
-                                <a href="#" class="btn btn-primary py-2 mr-1">Book now</a>
-                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a>
+                                <a href="#" class="btn btn-primary py-2 mr-1"><b>Book now</b></a>
+                                <a href="car-single.html" class="btn btn-secondary py-2 ml-1"><b>Details</b></a>
                             </p>
                         </div>
                     </div>
@@ -295,7 +314,7 @@
             <div class="row mb-5">
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2"><a href="#" class="logo">Online<span>Taxi</span></a></h2>
+                        <h2 class="ftco-heading-2"><a href="#" class="logo"><span style="color:black;">City</span><span style="color:var(--yellow);">Drivers</span></a></h2>
                         <p>Reliable rides, anytime, anywhere - Your journey, our priority.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                             <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -334,14 +353,14 @@
                             <ul>
                                 <li><span class="icon icon-map-marker"></span><span class="text">123 Street Kerala, India</span></li>
                                 <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 2323232323/span></a></li>
-                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@onlinetaxi.com</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@citydrivers.com</span></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container copyright text-center mt-4">
-                <p>© <span>Copyright</span> <strong class="px-1 sitename">Online Taxi</strong> <span>All Rights Reserved</span></p>
+                <p>© <span>Copyright</span> <strong class="px-1 sitename">City Drivers</strong> <span>All Rights Reserved</span></p>
                 
               </div>
             </div>

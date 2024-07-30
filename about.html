@@ -19,23 +19,48 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="path/to/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <style>
+        .navbar-brand img {
+          height: 100px;
+          width: 100px;
+        }
+        .navbar {
+          padding: 0,0,0,0; /* Adjust padding if needed */
+        }
+
+
+    </style>
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Online<span>Taxi</span></a>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/taxiii.png" alt="Online Taxi Logo" style="height: 100px; width: 100px;">
+                <span style="color:black;">City</span><span style="color:var(--yellow);">Drivers</span>
+              </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                   
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Our Cars</a></li>
-                    <li class="nav-item"><a href="pricing.html" class="nav-link">Picing</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item "> <a href="index.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+                        onmouseout="this.style.color='black';">Home</a></a></li>
+                      <li class="nav-item active"><a href="about.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+                        onmouseout="this.style.color='black';">About</a></li>
+                      <li class="nav-item"><a href="services.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+                        onmouseout="this.style.color='black';">Services</a></li>
+                      
+                      <li class="nav-item"><a href="car.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+                        onmouseout="this.style.color='black';">Our Cars</a></li>
+                      <li class="nav-item"><a href="pricing.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+                        onmouseout="this.style.color='black';">Pricing</a></li>
+                      <li class="nav-item"><a href="contact.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+                        onmouseout="this.style.color='black';">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -48,7 +73,7 @@
             <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
                 <div class="col-md-9 ftco-animate pb-5">
                     <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
-                    <h1 class="mb-3 bread">About Us</h1>
+                    <h1 class="mb-3 bread"><b>About Us</b></h1>
                 </div>
             </div>
         </div>
@@ -62,13 +87,12 @@
 
                 <div class="col-md-6 wrap-about ftco-animate">
                     <div class="heading-section heading-section-white pl-md-5">
-                        <span class="subheading">About us</span>
-                        <h2 class="mb-4">Welcome to Online Taxi</h2>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                        <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <span class="subheading"><h4><b>About us</b></h4></span>
+                        <h2 class="mb-4"><b>Welcome to Online Taxi</b></h2>
+                        <p style="color:white;">Since its establishment in 1999, Savaari has been a strong advocate of experiential and road travel, offering a unique and immersive experience beyond being just a logistics provider. Our commitment to the car rental service industry spans 16 years, where we've gone beyond being a mere taxi service provider. We see road travel as an opportunity to observe gradual changes in culture, climate, and scenery, appreciating remarkable richness and diversity while acknowledging underlying continuity. Savaari highly values this sensitivity, appreciation for diversity, and spirit of adventure, actively promoting and embodying these principles. Whether you're looking to rent a car or explore Savaari car rentals, our mission is clear: 'Making India fall in love with Road Travel.</p>
                         <!-- <p><a href="#" class="btn btn-primary py-3 px-4">Search Vehicle</a></p> -->
                         <p>
-                            <a href="#" class="btn btn-primary py-3 px-4" style="margin: 20px; border-radius: 12px; border: 2px solid black; color: white; text-decoration: none;">Search Vehicle</a>
+                            <a href="#" class="btn btn-primary py-3 px-4" style="margin: 20px; border-radius: 12px; border: 2px solid black; color: white; text-decoration: none;"><b>Search Vehicle</b></a>
                         </p>
                         
                         
@@ -78,13 +102,13 @@
         </div>
     </section>
 
-    <section class="ftco-section ftco-intro" style="background-image: url(images/bg_3.jpg);">
+    <section class="ftco-section ftco-intro" style="background-image: url(images/car_small.jpg);">
         <div class="overlay"></div>
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-md-6 heading-section heading-section-white ftco-animate">
-                    <h2 class="mb-3">Do You Want To Earn With Us? So Don't Be Late.</h2>
-                    <a href="#" class="btn btn-primary btn-lg">Become A Driver</a>
+                    <h2 class="mb-3"><b>Do You Want To Earn With Us? So Don't Be Late.</b></h2>
+                    <a href="#" class="btn btn-primary btn-lg"><b>Become A Driver</b></a>
                 </div>
             </div>
         </div>
@@ -94,19 +118,19 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-7 text-center heading-section ftco-animate">
-                    <span class="subheading"><h4>Testimonial</h4></span>
-                    <h2 class="mb-3">Happy Clients</h2>
+                    <h4 style="color: blue;"><b>Testimonial</b></h4>
+                    <h2 class="mb-3"><b>Happy Clients</b></h2>
                 </div>
             </div>
             <div class="row ftco-animate">
-                <div class="col-md-12">
+                <div class="col-md-12"></div>
                     <div class="carousel-testimony owl-carousel ftco-owl">
                         <!-- Testimonial 1 -->
                         <div class="item">
                             <div class="testimony-wrap rounded text-center py-4 pb-5">
-                                <div class="user-img mb-2" style="background-image: url(images/person_4.jpg)"></div>
+                                <div class="user-img mb-2" style="background-image: url('images/profile-icon.jpg');"></div>
                                 <div class="text pt-4">
-                                    <p class="mb-4">I had an amazing experience using this car booking service. The website was very user-friendly, and I was able to book a ride within minutes. The driver arrived on time, and the car was clean and comfortable. I highly recommend this service to anyone looking for a reliable and convenient way to book a car.</p>
+                                    <p class="mb-4" style="color: black;">I had an amazing experience using this car booking service. The website was very user-friendly, and I was able to book a ride within minutes. The driver arrived on time, and the car was clean and comfortable. I highly recommend this service to anyone looking for a reliable and convenient way to book a car.</p>
                                     <p class="name">John David</p>
                                 </div>
                             </div>
@@ -114,20 +138,60 @@
                         <!-- Testimonial 2 -->
                         <div class="item">
                             <div class="testimony-wrap rounded text-center py-4 pb-5">
-                                <div class="user-img mb-2" style="background-image: url(images/person_3.jpg)"></div>
+                                <div class="user-img mb-2" style="background-image: url('images/profile-icon.jpg');"></div>
                                 <div class="text pt-4">
-                                    <p class="mb-4">Overall, I had a good experience with this car booking service. The booking process was easy, and the driver was courteous and professional. My only issue was that the car arrived a few minutes late, but it wasn't a major inconvenience. I will definitely use this service again.</p>
-                                    <p class="name">Aravind R</p>
+                                    <p class="mb-4" style="color: black;">My experience with this car booking service was exceptional from start to finish. The website's intuitive design made the booking process straightforward, allowing me to secure a ride in just a few clicks. The driver was punctual and professional, and the vehicle was impeccably clean and well-maintained.</p>
+                                    <p class="name">George Mathew</p>
                                 </div>
                             </div>
                         </div>
                         <!-- Testimonial 3 -->
                         <div class="item">
                             <div class="testimony-wrap rounded text-center py-4 pb-5">
-                                <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)"></div>
+                                <div class="user-img mb-2" style="background-image: url('images/profile-icon.jpg');"></div>
                                 <div class="text pt-4">
-                                    <p class="mb-4">The car booking service was okay, but there is room for improvement. The website was a bit slow, and it took a while to complete my booking. The car was clean, but the driver was not very friendly. The ride was smooth, though, and I reached my destination on time. I might give this service another try in the future.</p>
-                                    <p class="name">Johnson Abraham</p>
+                                    <p class="mb-4" style="color: black;">I had a wonderful experience with this car booking service. The website was exceptionally easy to navigate, enabling me to book a ride in no time. The driver was prompt and professional, and the car was very comfortable. I strongly recommend this service to anyone in search of a user-friendly transportation solution.</p>
+                                    <p class="name">Emma Watson</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 4 -->
+                        <div class="item">
+                            <div class="testimony-wrap rounded text-center py-4 pb-5">
+                                <div class="user-img mb-2" style="background-image: url('images/profile-icon.jpg');"></div>
+                                <div class="text pt-4">
+                                    <p class="mb-4" style="color: black;">The service I received from this car booking platform was outstanding. The booking system was quick and efficient, and the driver was courteous and professional. The car was in excellent condition, and the entire ride was comfortable and pleasant. I would definitely use this service again and recommend it to others.</p>
+                                    <p class="name">Alice Johnson</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 5 -->
+                        <div class="item">
+                            <div class="testimony-wrap rounded text-center py-4 pb-5">
+                                <div class="user-img mb-2" style="background-image: url('images/profile-icon.jpg');"></div>
+                                <div class="text pt-4">
+                                    <p class="mb-4" style="color: black;">This car booking service exceeded my expectations. The website was very easy to use, and I was able to book a ride effortlessly. The driver was on time, and the vehicle was clean, user-friendly, spacious and comfortable. I highly recommend this service to anyone needing reliable and efficient transportation.</p>
+                                    <p class="name">Michael Lee</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 6 -->
+                        <div class="item">
+                            <div class="testimony-wrap rounded text-center py-4 pb-5">
+                                <div class="user-img mb-2" style="background-image: url('images/profile-icon.jpg');"></div>
+                                <div class="text pt-4">
+                                    <p class="mb-4" style="color: black;">I was very pleased with the car booking service. The website was user-friendly, making it easy to book a ride in no time. The driver was prompt and professional, and the car was clean and well-maintained. For anyone seeking a dependable and convenient transportation option, this service is a great choice.</p>
+                                    <p class="name">Sophia Brown</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 7 -->
+                        <div class="item">
+                            <div class="testimony-wrap rounded text-center py-4 pb-5">
+                                <div class="user-img mb-2" style="background-image: url('images/profile-icon.jpg');"></div>
+                                <div class="text pt-4">
+                                    <p class="mb-4" style="color: black;">Using this car booking service was a fantastic experience. The website was sleek and easy to use, allowing me to book my ride swiftly without any hassle. The driver was exceptionally professional and the car was immaculate and comfortable. I would highly recommend it to anyone in need of dependable transportation.</p>
+                                    <p class="name">David Smith</p>
                                 </div>
                             </div>
                         </div>
@@ -137,10 +201,7 @@
         </div>
     </section>
     
-
-
-
-
+    
     <section class="ftco-counter ftco-section img bg-light" id="section-counter">
         <div class="overlay"></div>
     <div class="container">
@@ -186,7 +247,7 @@
             <div class="row mb-5">
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2"><a href="#" class="logo">Online<span>Taxi</span></a></h2>
+                        <h2 class="ftco-heading-2"><a href="#" class="logo"><span style="color:black;">City</span><span style="color:var(--yellow);">Drivers</span></a></h2>
                         <p>Reliable rides, anytime, anywhere - Your journey, our priority.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                             <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -225,14 +286,14 @@
                             <ul>
                                 <li><span class="icon icon-map-marker"></span><span class="text">123 Street Kerala, India</span></li>
                                 <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 2323232323/span></a></li>
-                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@onlinetaxi.com</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@citydrivers.com</span></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container copyright text-center mt-4">
-                <p>© <span>Copyright</span> <strong class="px-1 sitename">Online Taxi</strong> <span>All Rights Reserved</span></p>
+                <p>© <span>Copyright</span> <strong class="px-1 sitename">City Drivers</strong> <span>All Rights Reserved</span></p>
                 
               </div>
             </div>
@@ -254,5 +315,35 @@
     <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- Owl Carousel CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel-testimony').owlCarousel({
+                loop: true,                // Enables continuous loop mode
+                margin: 10,                // Margin between items
+                nav: false,                // Disables next/prev navigation arrows
+                dots: false,               // Disables navigation dots
+                autoplay: true,            // Automatically starts the carousel
+                autoplayTimeout: 2000,     // Time between transitions (in milliseconds)
+                autoplayHoverPause: true,  // Pauses autoplay on hover
+                responsive: {
+                    0: {
+                        items: 1           // Number of items to show on screens smaller than 600px
+                    },
+                    600: {
+                        items: 2           // Number of items to show on screens between 600px and 1000px
+                    },
+                    1000: {
+                        items: 3           // Number of items to show on screens larger than 1000px
+                    }
+                }
+            });
+        });
+    </script>
+    
+
 </body>
 </html>

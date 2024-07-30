@@ -25,25 +25,44 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      .navbar-brand img {
+        height: 100px;
+        width: 100px;
+      }
+      .navbar {
+        padding: 0,0,0,0; /* Adjust padding if needed */
+      }
+    </style>
   </head>
   <body>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Online<span>Taxi</span></a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	     
+        <a class="navbar-brand" href="index.html">
+          <img src="images/taxiii.png" alt="Online Taxi Logo" style="height: 100px; width: 100px;">
+          <span style="color:black;">City</span><span style="color:var(--yellow);">Drivers</span>
+        </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="car.html" class="nav-link">Our Cars</a></li>
-	          
-            <li class="nav-item"><a href="pricing.html" class="nav-link">pricing</a></li>
-            <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"> <a href="index.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+              onmouseout="this.style.color='black';">Home</a></a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+              onmouseout="this.style.color='black';">About</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+              onmouseout="this.style.color='black';">Services</a></li>
+            
+            <li class="nav-item"><a href="car.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+              onmouseout="this.style.color='black';">Our Cars</a></li>
+            <li class="nav-item"><a href="pricing.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+              onmouseout="this.style.color='black';">Pricing</a></li>
+            <li class="nav-item active"><a href="contact.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+              onmouseout="this.style.color='black';">Contact</a></li>
             
 	        </ul>
 	      </div>
@@ -51,7 +70,7 @@
 	  </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/contact1.webp');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/contact_.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
@@ -71,25 +90,25 @@
               <div class="col-md-12">
                 <div class="border w-100 p-4 rounded mb-2 d-flex">
                   <div class="icon mr-3">
-                    <span class="icon-map-o"></span>
+                    <span class="icon-map-o" style="color: black;"></span>
                   </div>
-                  <p><span>Address:</span> 123 Street Kerala, India</p>
+                  <p><span style="color: black;">Address:</span> 123 Street Kerala, India</p>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="border w-100 p-4 rounded mb-2 d-flex">
                   <div class="icon mr-3">
-                    <span class="icon-mobile-phone"></span>
+                    <span class="icon-mobile-phone" style="color: black;"></span>
                   </div>
-                  <p><span>Phone:</span> <a href="tel://1234567920">+91 2323232323</a></p>
+                  <p><span style="color: black;">Phone:</span> <a href="tel://1234567920">+91 2323232323</a></p>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="border w-100 p-4 rounded mb-2 d-flex">
                   <div class="icon mr-3">
-                    <span class="icon-envelope-o"></span>
+                    <span class="icon-envelope-o" style="color: black;"></span>
                   </div>
-                  <p><span>Email:</span> <a href="mailto:info@onlinetaxi.com">info@onlinetaxi.com</a></p>
+                  <p><span style="color: black;">Email:</span> <a href="mailto:info@onlinetaxi.com">info@onlinetaxi.com</a></p>
                 </div>
               </div>
             </div>
@@ -142,7 +161,7 @@
           <div class="row mb-5">
               <div class="col-md">
                   <div class="ftco-footer-widget mb-4">
-                      <h2 class="ftco-heading-2"><a href="#" class="logo">Online <span>Taxi</span></a></h2>
+                      <h2 class="ftco-heading-2"><a href="#" class="logo"><span style="color:black;">City</span><span style="color:var(--yellow);">Drivers</span></a></h2>
                       <p>Reliable rides, anytime, anywhere - Your journey, our priority.</p>
                       <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                           <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -181,14 +200,14 @@
                           <ul>
                               <li><span class="icon icon-map-marker"></span><span class="text">123 Street Kerala, India</span></li>
                               <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 2323232323</span></a></li>
-                              <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@onlinetaxi.com</span></a></li>
+                              <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@citydrivers.com</span></a></li>
                           </ul>
                       </div>
                   </div>
               </div>
           </div>
           <div class="container copyright text-center mt-4">
-              <p>© <span>Copyright</span> <strong class="px-1 sitename">Online Taxi</strong> <span>All Rights Reserved</span></p>
+              <p>© <span>Copyright</span> <strong class="px-1 sitename">City Drivers</strong> <span>All Rights Reserved</span></p>
               
             </div>
           </div>

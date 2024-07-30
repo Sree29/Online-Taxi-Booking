@@ -8389,7 +8389,7 @@ h1, h2, h3, h4, h5,
   .slider-text .icon-wrap .icon {
     width: 70px;
     height: 70px;
-    background: #01d28e;
+    background: black;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -8630,9 +8630,9 @@ h1, h2, h3, h4, h5,
         background: #1089ff;
         color: #fff; }
   .btn.btn-secondary {
-    background: #01d28e !important;
-    border: 1px solid #01d28e !important;
-    color: #fff !important; }
+    background: var(--yellow) !important;
+    border: 1px solid var(--yellow) !important;
+    color: #000 !important; }
     .btn.btn-secondary:hover {
       border: 1px solid #01d28e;
       background: transparent;
@@ -8969,7 +8969,7 @@ h1, h2, h3, h4, h5,
     right: 0;
     bottom: 0;
     content: '';
-    background: #01d28e;
+    background: black;
     z-index: -2;
     width: 63%; }
     @media (max-width: 767.98px) {
@@ -9030,7 +9030,7 @@ h1, h2, h3, h4, h5,
       width: 40%;
       content: '';
       opacity: 1;
-      background: #01d28e;
+      background: var(--yellow);
       -ms-transform: rotate(20deg);
       /* IE 9 */
       -webkit-transform: rotate(20deg);
@@ -9147,11 +9147,11 @@ textarea.form-control {
   padding-bottom: 0; }
 
 .ftco-bg-dark {
-  background: #3c312e; }
+  background:  #708090; }
 
 .ftco-footer {
   font-size: 16px;
-  background: #000;
+  background:Medium Gray;
   padding: 7em 0; }
   .ftco-footer .logo {
     text-transform: uppercase;
@@ -9953,7 +9953,7 @@ textarea.form-control {
       border-radius: 20px; /* Rounded corners */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
       margin-bottom: 20px; /* Spacing between cards */
-      background-color:#01d28e;
+      background-color:var(--yellow);
       
   }
   .icon {
@@ -10071,8 +10071,6 @@ textarea.form-control {
 }
 
 
-
-
 /* service in index page */
 
 /* Ensure all cards have the same height and proper alignment */
@@ -10100,7 +10098,7 @@ textarea.form-control {
 
 /* Styling for the services card */
 .services-card {
-  background-color: #01d28e; /* Card background color */
+  background-color: var(--yellow); /* Card background color */
   border-radius: 10px; /* Rounded corners for the card */
   border: 1px solid black; /* Black border for the card */
   padding: 20px; /* Padding inside the card */
@@ -10111,7 +10109,7 @@ textarea.form-control {
 /* Circle container for the icon */
 /* Styling for the services card */
 .services-card {
-  background-color: #01d28e; /* Card background color */
+  background-color: var(--yellow); /* Card background color */
   border-radius: 10px; /* Rounded corners for the card */
   border: 1px solid black; /* Black border for the card */
   padding: 20px; /* Padding inside the card */
@@ -10177,7 +10175,7 @@ textarea.form-control {
 }
 
 .testimony-wrap {
-  background-color: #01d28e; /* Background color of the card */
+  background-color: var(--yellow); /* Background color of the card */
   border: 1px solid #000; /* Black border around the card */
   border-radius: 15px; /* Increase border-radius for more rounded corners */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
@@ -10190,9 +10188,9 @@ textarea.form-control {
   color: #fff; /* Set text color to white */
 }
 
-.testimony-wrap:hover {
-  transform: translateY(-10px); /* Move the card up on hover */
-}
+/* .testimony-wrap:hover {*/
+  /*transform: translateY(-10px); /* Move the card up on hover */
+/*}*/
 
 .user-img {
   width: 80px;
@@ -10222,7 +10220,7 @@ textarea.form-control {
 /*Contact*/
 
 .contact-card {
-  background-color: #01d28e; /* Background color for the card */
+  background-color: var(--yellow); /* Background color for the card */
   border: 1px solid black; /* Black border */
   border-radius: 10px; /* Rounded corners */
   color: #fff; /* Text color */
@@ -10282,7 +10280,7 @@ a.text-white {
 
 
 .contact-section .border {
-  background-color: #01d28e; /* Set the background color */
+  background-color: var(--yellow); /* Set the background color */
   color: #fff; /* Set text color to white for better contrast */
   border: 1px solid #01d82e; /* Optional: Add border of the same color */
 }
@@ -10312,7 +10310,6 @@ a.text-white {
   border-radius: 10px;
   border-color: white;
 }
-
 
 
 

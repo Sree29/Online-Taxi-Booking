@@ -26,6 +26,16 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      .navbar-brand img {
+        height: 100px;
+        width: 100px;
+      }
+      .navbar {
+        padding: 0,0,0,0; /* Adjust padding if needed */
+
+      }
+    </style>
 
   </head>
   
@@ -34,25 +44,36 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Online<span>Taxi</span></a>
+        <a class="navbar-brand" href="index.html">
+          <img src="images/taxiii.png" alt="Online Taxi Logo" style="height: 100px; width: 100px;">
+          <span style="color:black">City</span><span style="color:var(--yellow);">Drivers</span>
+
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
   
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item active"> <a href="index.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+              onmouseout="this.style.color='black';">Home</a></a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+              onmouseout="this.style.color='black';">About</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+              onmouseout="this.style.color='black';">Services</a></li>
             
-            <li class="nav-item"><a href="car.html" class="nav-link">Our Cars</a></li>
-            <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-user"></i> 
-              </a>
-              <div class="dropdown-menu" aria-labelledby="profileDropdown">
+            <li class="nav-item"><a href="car.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+              onmouseout="this.style.color='black';">Our Cars</a></li>
+            <li class="nav-item"><a href="pricing.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+              onmouseout="this.style.color='black';">Pricing</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
+              onmouseout="this.style.color='black';">Contact</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                   style="color: black;" onmouseover="this.style.color='var(--yellow)';" onmouseout="this.style.color='black';">
+                  <i class="fa fa-user"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="profileDropdown" >
                 <a class="dropdown-item" href="profile.html">My Profile</a>
                 <a class="dropdown-item" href="settings.html">Settings</a>
                 <a class="dropdown-item" href="logout.html">Logout</a>
@@ -62,17 +83,16 @@
         </div>
       </div>
     </nav>
-  
     
     <!-- END nav -->
     
-    <div class="hero-wrap ftco-degree-bg" style="background-image: url('images/bg_1.jpg'); object-fit: cover;" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap ftco-degree-bg" style="background-image: url('images/index_taxi.jpg'); object-fit: cover;" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
           <div class="col-lg-8 ftco-animate">
           	<div class="text w-100 text-center mb-md-5 pb-md-5">
-	            <h1 class="mb-4">Fast &amp; Easy Way To Book A Taxi</h1>
+	            <h1 class="mb-4"><strong >Fast</strong> &amp; <strong>Easy Way To Book A Taxi</strong> </h1>
 	            <p style="font-size: 18px;">Embark on your next adventure with our hassle-free car booking service. Find the perfect ride for every destination, ensuring your journey is as memorable as the destination itself.</p>
 	            <a href="https://vimeo.com/45830194" class="icon-wrap popup-vimeo d-flex align-items-center mt-4 justify-content-center">
 	            	<div class="icon d-flex align-items-center justify-content-center">
@@ -95,7 +115,7 @@
             <div class="row no-gutters" >
               <div class="col-md-4 d-flex align-items-center booking-column" >
                 <form action="#" class="request-form ftco-animate bg-black">
-                  <h2>Make your trip</h2>
+                  <h2><b>Make your trip</b></h2>
                   <div class="form-group">
                     <label for="" class="label">Pick-up location</label>
                     <input type="text" class="form-control" placeholder="City, Airport, Station, etc">
@@ -119,22 +139,22 @@
                     <input type="text" class="form-control" id="time_pick" placeholder="Time">
                   </div>
                   <div class="form-group">
-                    <button type="button" class="btn btn-secondary py-3 px-4" data-toggle="modal" data-target="#loginModal">Book A Car Now</button>
+                    <button type="button" class="btn btn-secondary py-3 px-4" data-toggle="modal" data-target="#loginModal"><strong>Book A Car Now</strong></button>
                   </div>
                 </form>
               </div>
               <div class="col-md-8 d-flex align-items-center">
                 <div class="services-wrap rounded-right w-100 ">
-                  <h3 class="heading-section mb-4">Better Way to Rent Your Perfect Cars</h3>
+                  <h2 class="heading-section mb-4" ><b>Better Way to Rent Your Perfect Cars</b></h2>
                   <div class="row d-flex mb-4">
                     <div class="col-md-4 d-flex align-self-stretch ftco-animate">
                       <div class="card custom-card text-center w-100">
                         <div class="card-body">
                           <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="flaticon-route"></span> <!-- Ensure this is the correct class for the icon -->
+                            <span class="flaticon-route" style="color: black;"></span> <!-- Ensure this is the correct class for the icon -->
                           </div>
                           <div class="text w-100">
-                            <h3 class="card-title heading mb-2">Choose Your Pickup Location</h3>
+                            <h1 class="card-title heading mb-2" style="color: black;"><b>Choose Your Pickup Locatio</b>n</h1>
                           </div>
                         </div>
                       </div>
@@ -143,10 +163,10 @@
                       <div class="card custom-card text-center w-100">
                         <div class="card-body">
                           <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="flaticon-handshake"></span> <!-- Ensure this is the correct class for the icon -->
+                            <span class="flaticon-handshake" style="color: black;"></span> <!-- Ensure this is the correct class for the icon -->
                           </div>
                           <div class="text w-100">
-                            <h3 class="card-title heading mb-2">Select the Best Deal</h3>
+                            <h1 class="card-title heading mb-2" style="color: black;"><b>Select the Best Deal</b></h1>
                           </div>
                         </div>
                       </div>
@@ -155,17 +175,17 @@
                       <div class="card custom-card text-center w-100">
                         <div class="card-body">
                           <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="flaticon-rent"></span> <!-- Ensure this is the correct class for the icon -->
+                            <span class="flaticon-rent" style="color: black;"></span> <!-- Ensure this is the correct class for the icon -->
                           </div>
                           <div class="text w-100">
-                            <h3 class="card-title heading mb-2">Book Your Car</h3>
+                            <h1 class="card-title heading mb-2" style="color: black;"><b>Book Your Car</b></h1>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="button-container">
-                    <a href="#" class="btn btn-primary py-3 px-4">Reserve Your Perfect Car</a>
+                    <a href="#" class="btn btn-primary py-3 px-4"><b>Reserve Your Perfect Car</b></a>
                   </div>
                 </div>
               </div>
@@ -267,15 +287,13 @@
             </div>
         </div>
     </div>
-</div>
-
-
+  </div>
 
 <section class="ftco-section ftco-no-pt bg-light">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-        <h2 class="mb-2">Featured Vehicles</h2>
+        <h2 class="mb-2"><b>Featured Vehicles</b></h2>
       </div>
     </div>
     <div class="row">
@@ -356,44 +374,43 @@
     </div>
   </div>
 </section>
-
-
-  <section class="ftco-section ftco-about">
-    <div class="container">
-      <div class="row no-gutters">
-        <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/about.jpg);">
-        </div>
-        <div class="col-md-6 wrap-about ftco-animate">
-          <div class="heading-section heading-section-white pl-md-5">
-            <span class="subheading">About us</span>
-            <h2 class="mb-4">Welcome to Online Taxi</h2>
-
-            <p>Since its establishment in 1999, Savaari has been a strong advocate of experiential and road travel, offering a unique and immersive experience beyond being just a logistics provider. Our commitment to the car rental service industry spans 16 years, where we've gone beyond being a mere taxi service provider. We see road travel as an opportunity to observe gradual changes in culture, climate, and scenery, appreciating remarkable richness and diversity while acknowledging underlying continuity. Savaari highly values this sensitivity, appreciation for diversity, and spirit of adventure, actively promoting and embodying these principles. Whether you're looking to rent a car or explore Savaari car rentals, our mission is clear: 'Making India fall in love with Road Travel. </p>
-            <p>To ensure last-mile connectivity, we are present in more than 2000 cities across India.</p>
-            <p><a href="#" class="btn btn-primary py-3 px-4">Search Vehicle</a></p>
-          </div>
+<section class="ftco-section ftco-about">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/bg2.jpg);">
+      </div>
+      <div class="col-md-6 wrap-about ftco-animate" style="background-color:var(--yellow)">
+        <div class="heading-section heading-section-white pl-md-5">
+          <span class="subheading">
+            <h4><b>About Us</b></h4>
+          </span>
+          <h2 class="mb-4" style="color: black;"><b>Welcome to Online Taxi</b></h2>
+          <p style="color: black;">Since its establishment in 1999, Savaari has been a strong advocate of experiential and road travel, offering a unique and immersive experience beyond being just a logistics provider. Our commitment to the car rental service industry spans 16 years, where we've gone beyond being a mere taxi service provider. We see road travel as an opportunity to observe gradual changes in culture, climate, and scenery, appreciating remarkable richness and diversity while acknowledging underlying continuity. Savaari highly values this sensitivity, appreciation for diversity, and spirit of adventure, actively promoting and embodying these principles. Whether you're looking to rent a car or explore Savaari car rentals, our mission is clear: 'Making India fall in love with Road Travel.</p>
+          <p style="color: black;">To ensure last-mile connectivity, we are present in more than 2000 cities across India.</p>
+          <p><a href="#" class="btn btn-primary py-3 px-4">Search Vehicle</a></p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section class="ftco-section">
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-md-7 text-center heading-section ftco-animate">
-          <span class="subheading"><h4 style="color:blue;">Services</h4></span>
-          <h2 class="mb-3">Our Latest Services</h2>
+          <span class="subheading"><h4 style="color:blue;"><b>Services</b></h4></span>
+          <h2 class="mb-3"><b>Our Latest Services</b></h2>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3">
           <div class="services-card text-center">
             <div class="icon d-flex align-items-center justify-content-center">
-              <span class="flaticon-route"></span>
+              <span class="fas fa-taxi" style="color: black;"></span>
             </div>
             <div class="card-body">
-              <h3 class="heading mb-2" style="color: black;">Local Car Rentals</h3>
-              <p>Discover convenient local car rental services tailored to your needs, ensuring seamless transportation for every journey.</p>
+              <h3 class="heading mb-2" style="color: black;"><b>Local Car Rentals</b></h3>
+              <p style="color: black;">Discover convenient local car rental services tailored to your needs, ensuring seamless transportation for every journey.</p>
             </div>
           </div>
         </div>
@@ -401,11 +418,11 @@
         <div class="col-md-3">
           <div class="services-card text-center">
             <div class="icon d-flex align-items-center justify-content-center">
-              <span class="flaticon-route"></span>
+              <span class="fas fa-car" style="color: black;"></span>
             </div>
             <div class="card-body">
-              <h3 class="heading mb-2" style="color: black;">Airport Taxi</h3>
-              <p>Reliable local airport taxi service providing prompt and comfortable transportation to and from airports, ensuring a stress-free travel experience.</p>
+              <h3 class="heading mb-2" style="color: black;"><b>Airport Taxi</b></h3>
+              <p style="color: black;"> Reliable local airport taxi service providing prompt and comfortable transportation to and from airports, ensuring a stress-free travel experience.</p>
             </div>
           </div>
         </div>
@@ -413,11 +430,11 @@
         <div class="col-md-3">
           <div class="services-card text-center">
             <div class="icon d-flex align-items-center justify-content-center">
-              <span class="flaticon-route"></span>
+              <span class="fas fa-map-marker-alt" style="color: black;"></span>
             </div>
             <div class="card-body">
-              <h3 class="heading mb-2" style="color: black;">Out Station Taxi</h3>
-              <p>Experience seamless travel between cities with our trusted outstation taxi service, featuring comfortable rides, experienced drivers, and competitive pricing to ensure a stress-free journey.</p>
+              <h3 class="heading mb-2" style="color: black;"><b>Out Station Taxi</b></h3>
+              <p style="color: black;">Experience seamless travel between cities with our trusted outstation taxi service, featuring comfortable rides, experienced drivers, and competitive pricing to ensure a stress-free journey.</p>
             </div>
           </div>
         </div>
@@ -425,11 +442,11 @@
         <div class="col-md-3">
           <div class="services-card text-center">
             <div class="icon d-flex align-items-center justify-content-center">
-              <span class="flaticon-route"></span>
+              <span class="fas fa-taxi" style="color: black;"></span>
             </div>
             <div class="card-body">
-              <h3 class="heading mb-2" style="color: black;">Corporate Car Rental</h3>
-              <p>Elevate your business travel experience with our dedicated corporate car rental service, offering tailored solutions, premium vehicles, and seamless booking management to support your professional needs.</p>
+              <h3 class="heading mb-2" style="color: black;"><b>Corporate Car Rental</b></h3>
+              <p style="color: black;">Elevate your business travel experience with our dedicated corporate car rental service, offering tailored solutions, premium vehicles, and seamless booking management to support your professional needs.</p>
             </div>
           </div>
         </div>
@@ -483,7 +500,7 @@
         <div class="row mb-5">
           <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2"><a href="#" class="logo">Online<span>Taxi</span></a></h2>
+              <h2 class="ftco-heading-2"><a href="#" class="logo"> <span style="color:black;">City</span><span style="color:var(--yellow);">Drivers</span></a></h2>
               <p>Reliable rides, anytime, anywhere - Your journey, our priority.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -513,7 +530,7 @@
                 <ul>
                   <li><span class="icon icon-map-marker"></span><span class="text">123 Street Kerala, India</span></li>
                   <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 2323232323</span></a></li>
-                  <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@onlinetaxi.com</span></a></li>
+                  <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@citydrivers.com</span></a></li>
                 </ul>
               </div>
             </div>
@@ -523,7 +540,7 @@
     
     
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Online Taxi</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">City Drivers</strong> <span>All Rights Reserved</span></p>
       
     </div>
   </footer>

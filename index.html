@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Online Taxi </title>
+    <title>City Drivers</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -35,6 +35,119 @@
         padding: 0,0,0,0; /* Adjust padding if needed */
 
       }
+
+      .icon-container {
+    background-color: white; /* Circle background color */
+    border-radius: 50%; /* Makes the container a circle */
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Centering the icon container */
+  }
+  
+  .icon {
+    font-size: 24px; /* Adjust icon size as needed */
+  }
+
+  .services-card {
+  border: 2px solid black; /* Border color and thickness */
+  border-radius: 10px; /* Rounded corners */
+  transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+@media (max-width: 1200px) {
+  .services-card {
+    border: 1.5px solid black; /* Adjust border thickness for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .services-card {
+    border: 1px solid black; /* Adjust border thickness for smaller screens */
+  }
+  .icon-container {
+    width: 50px; /* Adjust size of icon container for smaller screens */
+    height: 50px; /* Adjust size of icon container for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .services-card {
+    border: 1px solid black; /* Keep border thickness consistent on small screens */
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+  .icon-container {
+    width: 40px; /* Adjust size of icon container for very small screens */
+    height: 40px; /* Adjust size of icon container for very small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .services-card {
+    border: 1px solid black; /* Maintain border thickness on extra small screens */
+    padding: 0.75rem; /* Adjust padding for extra small screens */
+  }
+  .icon-container {
+    width: 30px; /* Further adjust size of icon container */
+    height: 30px; /* Further adjust size of icon container */
+  }
+}
+
+/* Ensures the about section content is centered vertically and horizontally */
+.ftco-about .wrap-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.ftco-about .heading-section {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+@media (max-width: 768px) {
+  .ftco-about .heading-section {
+    max-width: 100%;
+    padding: 15px;
+  }
+  
+  .ftco-about .wrap-about {
+    padding: 10px;
+  }
+}
+
+/* Responsive image styling */
+.ftco-about .img {
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 576px) {
+  .ftco-about .img {
+    min-height: 200px;
+  }
+}
+.btn-yellow {
+  background-color:var(--yellow);  /* Yellow background color */
+  color: black;              /* Text color (optional) */
+  border: none;              /* Remove border (optional) */
+  padding: 10px 20px;        /* Padding for the button */
+  font-size: 16px;           /* Font size */
+  cursor: pointer;           /* Pointer cursor on hover */
+  border-radius: 5px;        /* Rounded corners (optional) */
+  transition: background-color 0.3s ease;  /* Smooth transition effect */
+  border: 1px solid black;
+}
+
+.btn-yellow:hover {
+  background-color:var(--yellow);    /* Change color on hover (optional) */
+}
+
+
     </style>
 
   </head>
@@ -85,23 +198,22 @@
     </nav>
     
     <!-- END nav -->
-    
-    <div class="hero-wrap ftco-degree-bg" style="background-image: url('images/index_taxi.jpg'); object-fit: cover;" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap ftco-degree-bg" style="background-image: url('images/index_taxi.jpg'); background-size: cover; background-position: center center;" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
-        <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
-          <div class="col-lg-8 ftco-animate">
-          	<div class="text w-100 text-center mb-md-5 pb-md-5">
-	            <h1 class="mb-4"><strong >Fast</strong> &amp; <strong>Easy Way To Book A Taxi</strong> </h1>
-	            <p style="font-size: 18px;">Embark on your next adventure with our hassle-free car booking service. Find the perfect ride for every destination, ensuring your journey is as memorable as the destination itself.</p>
-	            <a href="https://vimeo.com/45830194" class="icon-wrap popup-vimeo d-flex align-items-center mt-4 justify-content-center">
-	            	<div class="icon d-flex align-items-center justify-content-center">
-	            		<span class="ion-ios-play"></span>
-	            	</div>
-	            	<div class="heading-title ml-5">
-		            	<span>Easy steps for booking a car</span>
-	            	</div>
-	            </a>
+        <div class="row no-gutters slider-text justify-content-center align-items-center text-center">
+          <div class="col-lg-8 col-md-10 col-sm-12 ftco-animate">
+            <div class="text w-100 mb-md-5 pb-md-5">
+              <h1 class="mb-4"><strong>Fast</strong> &amp; <strong>Easy Way To Book A Taxi</strong></h1>
+              <p class="mb-4" style="font-size: 18px;">Embark on your next adventure with our hassle-free car booking service. Find the perfect ride for every destination, ensuring your journey is as memorable as the destination itself.</p>
+              <a href="https://vimeo.com/45830194" class="icon-wrap popup-vimeo d-flex align-items-center mt-4 justify-content-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="ion-ios-play"></span>
+                </div>
+                <div class="heading-title ml-3">
+                  <span>Easy steps for booking a car</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -216,7 +328,7 @@
                         <label for="password">Password</label>
                         <input type="password" class="form-control" id="password" placeholder="Password">
                     </div>
-                    <button type="submit" class="btn btn-success">Login</button>
+                    <button type="submit" class="btn-yellow">Login</button>
                 </form>
                 <p class="mt-3">
                     <a href="#" data-toggle="modal" data-target="#forgotPasswordModal" data-dismiss="modal">Forgot Password?</a>
@@ -251,7 +363,7 @@
                         <label for="registerConfirmPassword">Confirm Password</label>
                         <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Confirm Password">
                     </div>
-                    <button type="submit" class="btn btn-success">Register</button>
+                    <button type="submit" class="btn-yellow">Register</button>
                 </form>
             </div>
         </div>
@@ -282,7 +394,7 @@
                         <label for="confirmNewPassword">Confirm New Password</label>
                         <input type="password" class="form-control" id="confirmNewPassword" placeholder="Confirm Password">
                     </div>
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btn-yellow">Submit</button>
                 </form>
             </div>
         </div>
@@ -309,7 +421,7 @@
                   <span class="cat">Maruti</span>
                   <p class="price ml-auto">₹3000 <span>/day</span></p>
                 </div>
-                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
+                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1"  style="border-radius: 10px;">Details</a></p>
               </div>
             </div>
           </div>
@@ -323,7 +435,7 @@
                   <span class="cat">Hyundai</span>
                   <p class="price ml-auto">₹4000 <span>/day</span></p>
                 </div>
-                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
+                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1"  style="border-radius: 10px;">Details</a></p>
               </div>
             </div>
           </div>
@@ -337,7 +449,7 @@
                   <span class="cat">Tata</span>
                   <p class="price ml-auto">₹3500 <span>/day</span></p>
                 </div>
-                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
+                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1"  style="border-radius: 10px;">Details</a></p>
               </div>
             </div>
           </div>
@@ -351,7 +463,7 @@
                   <span class="cat">Maruti</span>
                   <p class="price ml-auto">₹3200 <span>/day</span></p>
                 </div>
-                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
+                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1"  style="border-radius: 10px;">Details</a></p>
               </div>
             </div>
           </div>
@@ -365,7 +477,7 @@
                   <span class="cat">Mahindra</span>
                   <p class="price ml-auto">₹5000 <span>/day</span></p>
                 </div>
-                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
+                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1"  style="border-radius: 10px;">Details</a></p>
               </div>
             </div>
           </div>
@@ -377,16 +489,16 @@
 <section class="ftco-section ftco-about">
   <div class="container">
     <div class="row no-gutters">
-      <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/bg2.jpg);">
+      <div class="col-lg-6 col-md-12 p-md-5 img img-2 d-flex justify-content-center align-items-center mb-3 mb-lg-0" style="background-image: url(images/bg2.jpg); min-height: 300px;">
       </div>
-      <div class="col-md-6 wrap-about ftco-animate" style="background-color:var(--yellow)">
-        <div class="heading-section heading-section-white pl-md-5">
+      <div class="col-lg-6 col-md-12 wrap-about ftco-animate d-flex align-items-center" style="background-color: var(--yellow); border: 2px solid black;">
+        <div class="heading-section heading-section-white mx-auto">
           <span class="subheading">
             <h4><b>About Us</b></h4>
           </span>
-          <h2 class="mb-4" style="color: black;"><b>Welcome to Online Taxi</b></h2>
-          <p style="color: black;">Since its establishment in 1999, Savaari has been a strong advocate of experiential and road travel, offering a unique and immersive experience beyond being just a logistics provider. Our commitment to the car rental service industry spans 16 years, where we've gone beyond being a mere taxi service provider. We see road travel as an opportunity to observe gradual changes in culture, climate, and scenery, appreciating remarkable richness and diversity while acknowledging underlying continuity. Savaari highly values this sensitivity, appreciation for diversity, and spirit of adventure, actively promoting and embodying these principles. Whether you're looking to rent a car or explore Savaari car rentals, our mission is clear: 'Making India fall in love with Road Travel.</p>
-          <p style="color: black;">To ensure last-mile connectivity, we are present in more than 2000 cities across India.</p>
+          <h2 class="mb-4" style="color: black;"><b>Welcome to Car Drivers</b></h2>
+          <p style="color: black; text-align:left;">Since its establishment in 1999, Savaari has been a strong advocate of experiential and road travel, offering a unique and immersive experience beyond being just a logistics provider. Our commitment to the car rental service industry spans 16 years, where we've gone beyond being a mere taxi service provider. We see road travel as an opportunity to observe gradual changes in culture, climate, and scenery, appreciating remarkable richness and diversity while acknowledging underlying continuity. Savaari highly values this sensitivity, appreciation for diversity, and spirit of adventure, actively promoting and embodying these principles. Whether you're looking to rent a car or explore Savaari car rentals, our mission is clear: 'Making India fall in love with Road Travel.'</p>
+          <p style="color: black; text-align: left;">To ensure last-mile connectivity, we are present in more than 2000 cities across India.</p>
           <p><a href="#" class="btn btn-primary py-3 px-4">Search Vehicle</a></p>
         </div>
       </div>
@@ -394,67 +506,66 @@
   </div>
 </section>
 
-  <section class="ftco-section">
-    <div class="container">
-      <div class="row justify-content-center mb-5">
-        <div class="col-md-7 text-center heading-section ftco-animate">
-          <span class="subheading"><h4 style="color:blue;"><b>Services</b></h4></span>
-          <h2 class="mb-3"><b>Our Latest Services</b></h2>
+<section class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7 text-center heading-section ftco-animate">
+        <span class="subheading"><h4 style="color:blue;"><b>Services</b></h4></span>
+        <h2 class="mb-3"><b>Our Latest Services</b></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+        <div class="services-card text-center" style="border: 2px solid black; border-radius: 8px;">
+          <div class="icon-container d-flex align-items-center justify-content-center mb-3">
+            <span class="fas fa-taxi" style="color: black;"></span>
+          </div>
+          <div class="card-body">
+            <h3 class="heading mb-2" style="color: black;"><b>Local Car Rentals</b></h3>
+            <p style="color: black;">Discover convenient local car rental services tailored to your needs, ensuring seamless transportation for every journey.</p>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="services-card text-center">
-            <div class="icon d-flex align-items-center justify-content-center">
-              <span class="fas fa-taxi" style="color: black;"></span>
-            </div>
-            <div class="card-body">
-              <h3 class="heading mb-2" style="color: black;"><b>Local Car Rentals</b></h3>
-              <p style="color: black;">Discover convenient local car rental services tailored to your needs, ensuring seamless transportation for every journey.</p>
-            </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+        <div class="services-card text-center " style="border: 2px solid black; border-radius: 8px;">
+          <div class="icon-container d-flex align-items-center justify-content-center mb-3">
+            <span class="fas fa-car" style="color: black;"></span>
+          </div>
+          <div class="card-body">
+            <h3 class="heading mb-2" style="color: black;"><b>Airport Taxi</b></h3>
+            <p style="color: black;">Reliable local airport taxi service providing prompt and comfortable transportation to and from airports, ensuring a stress-free travel experience.</p>
           </div>
         </div>
-  
-        <div class="col-md-3">
-          <div class="services-card text-center">
-            <div class="icon d-flex align-items-center justify-content-center">
-              <span class="fas fa-car" style="color: black;"></span>
-            </div>
-            <div class="card-body">
-              <h3 class="heading mb-2" style="color: black;"><b>Airport Taxi</b></h3>
-              <p style="color: black;"> Reliable local airport taxi service providing prompt and comfortable transportation to and from airports, ensuring a stress-free travel experience.</p>
-            </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+        <div class="services-card text-center" style="border: 2px solid black; border-radius: 8px;">
+          <div class="icon-container d-flex align-items-center justify-content-center mb-3">
+            <span class="fas fa-map-marker-alt" style="color: black;"></span>
+          </div>
+          <div class="card-body">
+            <h3 class="heading mb-2" style="color: black;"><b>Out Station Taxi</b></h3>
+            <p style="color: black;">Experience seamless travel between cities with our trusted outstation taxi service, featuring comfortable rides, experienced drivers, and competitive pricing to ensure a stress-free journey.</p>
           </div>
         </div>
-  
-        <div class="col-md-3">
-          <div class="services-card text-center">
-            <div class="icon d-flex align-items-center justify-content-center">
-              <span class="fas fa-map-marker-alt" style="color: black;"></span>
-            </div>
-            <div class="card-body">
-              <h3 class="heading mb-2" style="color: black;"><b>Out Station Taxi</b></h3>
-              <p style="color: black;">Experience seamless travel between cities with our trusted outstation taxi service, featuring comfortable rides, experienced drivers, and competitive pricing to ensure a stress-free journey.</p>
-            </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+        <div class="services-card text-center" style="border: 2px solid black; border-radius: 8px;">
+          <div class="icon-container d-flex align-items-center justify-content-center mb-3">
+            <span class="fa fa-taxi" style="color: black;"></span>
           </div>
-        </div>
-  
-        <div class="col-md-3">
-          <div class="services-card text-center">
-            <div class="icon d-flex align-items-center justify-content-center">
-              <span class="fas fa-taxi" style="color: black;"></span>
-            </div>
-            <div class="card-body">
-              <h3 class="heading mb-2" style="color: black;"><b>Corporate Car Rental</b></h3>
-              <p style="color: black;">Elevate your business travel experience with our dedicated corporate car rental service, offering tailored solutions, premium vehicles, and seamless booking management to support your professional needs.</p>
-            </div>
+          <div class="card-body">
+            <h3 class="heading mb-2" style="color: black;"><b>Corporate Car Rental</b></h3>
+            <p style="color: black;">Elevate your business travel experience with our dedicated corporate car rental service, offering tailored solutions, premium vehicles, and seamless booking management to support your professional needs.</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  
-  
+  </div>
+</section>
+
     <section class="ftco-counter ftco-section img bg-light" id="section-counter">
 			<div class="overlay"></div>
     	<div class="container">
@@ -498,32 +609,31 @@
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2"><a href="#" class="logo"> <span style="color:black;">City</span><span style="color:var(--yellow);">Drivers</span></a></h2>
               <p>Reliable rides, anytime, anywhere - Your journey, our priority.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Information</h2>
               <ul class="list-unstyled">
                 <li><a href="#" class="py-2 d-block">Home</a></li>
                 <li><a href="#" class="py-2 d-block">About</a></li>
                 <li><a href="#" class="py-2 d-block">Services</a></li>
-                
                 <li><a href="#" class="py-2 d-block">Our Cars</a></li>
                 <li><a href="#" class="py-2 d-block">Pricing</a></li>
                 <li><a href="#" class="py-2 d-block">Contact</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Have a Question?</h2>
               <div class="block-23 mb-3">
@@ -538,12 +648,11 @@
         </div>
       </div>
     
+      <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">City Drivers</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </footer>
     
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">City Drivers</strong> <span>All Rights Reserved</span></p>
-      
-    </div>
-  </footer>
   
 
   <!-- loader -->

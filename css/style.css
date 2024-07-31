@@ -8530,7 +8530,7 @@ h1, h2, h3, h4, h5,
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       margin-top: -10px;
-      color: #1089ff !important;
+      color: var(--yellow) !important;
       -moz-transition: all 0.7s ease;
       -o-transition: all 0.7s ease;
       -webkit-transition: all 0.7s ease;
@@ -8568,7 +8568,7 @@ h1, h2, h3, h4, h5,
         -ms-border-radius: 50%;
         border-radius: 50%; }
       .owl-carousel .owl-dots .owl-dot.active {
-        background: #b3b3b3; }
+        background: var(--yellow); }
   .owl-carousel:hover .owl-nav .owl-prev,
   .owl-carousel:hover .owl-nav .owl-next {
     opacity: 1; }
@@ -10099,23 +10099,15 @@ textarea.form-control {
 /* Styling for the services card */
 .services-card {
   background-color: var(--yellow); /* Card background color */
-  border-radius: 10px; /* Rounded corners for the card */
-  border: 1px solid black; /* Black border for the card */
+  border-radius: 8px; /* Rounded corners for the card */
+  
   padding: 20px; /* Padding inside the card */
   margin-bottom: 20px; /* Space below each card */
   color: #fff; /* Text color inside the card */
 }
 
 /* Circle container for the icon */
-/* Styling for the services card */
-.services-card {
-  background-color: var(--yellow); /* Card background color */
-  border-radius: 10px; /* Rounded corners for the card */
-  border: 1px solid black; /* Black border for the card */
-  padding: 20px; /* Padding inside the card */
-  margin-bottom: 20px; /* Space below each card */
-  color: #fff; /* Text color inside the card */
-}
+
 
 .icon {
   font-size: 2rem; /* Adjust icon size */

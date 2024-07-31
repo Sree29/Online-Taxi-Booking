@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Online Taxi</title>
+    <title>City Drivers</title>
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -27,6 +27,53 @@
       .navbar {
         padding: 0,0,0,0; /* Adjust padding if needed */
       }
+
+      .icon-container {
+    background-color: white; /* Circle background color */
+    border-radius: 50%; /* Makes the container a circle */
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Centering the icon container */
+  }
+  
+  .icon {
+    font-size: 24px; /* Adjust icon size as needed */
+  }
+
+  /* Base styles for services cards */
+.services-card {
+  border: 2px solid black; /* Border color and thickness */
+  border-radius: 10px; /* Rounded corners */
+  transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.icon-container {
+  width: 60px; /* Fixed width for icon container */
+  height: 60px; /* Fixed height for icon container */
+  background-color: white; /* Background color for icon container */
+  border-radius: 50%; /* Circle shape */
+  border: 2px solid black; /* Border for icon container */
+  margin: 0 auto; /* Center icon container */
+}
+
+@media (max-width: 768px) {
+  .icon-container {
+    width: 50px; /* Adjust size of icon container for smaller screens */
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon-container {
+    width: 40px; /* Adjust size of icon container for very small screens */
+    height: 40px;
+  }
+}
+
+
     </style>
 
 </head>
@@ -74,65 +121,67 @@
     </section>
 
     <section class="ftco-section">
-        <div class="container">
-          <div class="row justify-content-center mb-5">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-              <span class="subheading"><h4 style="color:blue;"><b>Services</b></h4></span>
-              <h2 class="mb-3"><b>Our Latest Services</b></h2>
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">
+              <h4 style="color:blue;"><b>Services</b></h4>
+            </span>
+            <h2 class="mb-3"><b>Our Latest Services</b></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="services-card text-center p-3 " style="border: 2px solid black; border-radius: 8px;">
+              <div class="icon-container d-flex align-items-center justify-content-center mb-2">
+                <span class="fas fa-taxi" style="color: black;"></span>
+              </div>
+              <div class="card-body">
+                <h3 class="heading mb-2" style="color: black;"><b>Local Car Rentals</b></h3>
+                <p style="color: black;">Discover convenient local car rental services tailored to your needs, ensuring seamless transportation for every journey.</p>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="services-card text-center">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="fas fa-taxi" style="color: black;"></span>
-                </div>
-              
-                <div class="card-body">
-                  <h3 class="heading mb-2" style="color: black;"><b>Local Car Rentals</b></h3>
-                  <p style="color: black;">Discover convenient local car rental services tailored to your needs, ensuring seamless transportation for every journey.</p>
-                </div>
+    
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="services-card text-center p-3 " style="border: 2px solid black; border-radius: 8px;">
+              <div class="icon-container d-flex align-items-center justify-content-center mb-2">
+                <span class="fas fa-car" style="color: black;"></span>
+              </div>
+              <div class="card-body">
+                <h3 class="heading mb-2" style="color: black;"><b>Airport Taxi</b></h3>
+                <p style="color: black;">Reliable local airport taxi service providing prompt and comfortable transportation to and from airports, ensuring a stress-free travel experience.</p>
               </div>
             </div>
-
-             
-            <div class="col-md-3">
-              <div class="services-card text-center">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="fas fa-car" style="color: black;"></span>
-                </div>
-                <div class="card-body">
-                  <h3 class="heading mb-2" style="color: black;"><b>Airport Taxi</b></h3>
-                  <p style="color: black;">Reliable local airport taxi service providing prompt and comfortable transportation to and from airports, ensuring a stress-free travel experience.</p>
-                </div>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="services-card text-center p-3" style="border: 2px solid black; border-radius: 8px;">
+              <div class="icon-container d-flex align-items-center justify-content-center mb-2">
+                <span class="fas fa-map-marker-alt" style="color: black;"></span>
+              </div>
+              <div class="card-body">
+                <h3 class="heading mb-2" style="color: black;"><b>Out Station Taxi</b></h3>
+                <p style="color: black;">Experience seamless travel between cities with our trusted outstation taxi service, featuring comfortable rides, experienced drivers, and competitive pricing to ensure a stress-free journey.</p>
               </div>
             </div>
-      
-            <div class="col-md-3">
-              <div class="services-card text-center">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class=" fas fa-map-marker-alt" style="color: black;"></span>
-                </div>
-                <div class="card-body">
-                  <h3 class="heading mb-2" style="color: black;"><b>Out Station Tax</b>i</h3>
-                  <p style="color: black;">Experience seamless travel between cities with our trusted outstation taxi service, featuring comfortable rides, experienced drivers, and competitive pricing to ensure a stress-free journey.</p>
-                </div>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="services-card text-center p-3" style="border: 2px solid black; border-radius: 8px;">
+              <div class="icon-container d-flex align-items-center justify-content-center mb-2">
+                <span class="fas fa-building" style="color: black;"></span>
               </div>
-            </div>
-            <div class="col-md-3">
-              <div class="services-card text-center">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="fa fa-taxi" style="color: black;"></span>
-                </div>
-                <div class="card-body">
-                  <h3 class="heading mb-2" style="color: black;"><b>Corporate Car Rental</b></h3>
-                  <p style="color: black;">Elevate your business travel experience with our dedicated corporate car rental service, offering tailored solutions, premium vehicles, and seamless booking management to support your professional needs.</p>
-                </div>
+              <div class="card-body">
+                <h3 class="heading mb-2" style="color: black;"><b>Corporate Car Rental</b></h3>
+                <p style="color: black;">Elevate your business travel experience with our dedicated corporate car rental service, offering tailored solutions, premium vehicles, and seamless booking management to support your professional needs.</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    
       
     <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">

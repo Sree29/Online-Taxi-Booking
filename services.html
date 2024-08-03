@@ -73,6 +73,14 @@
   }
 }
 
+.nav-item.active .nav-link.home-link {
+  color: var(--yellow);
+}
+
+.nav-item.active .nav-link.home-link:hover {
+  color: var(--yellow);
+}
+
 
     </style>
 
@@ -89,26 +97,30 @@
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"> <a href="index.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
-                    onmouseout="this.style.color='black';">Home</a></a></li>
-                  <li class="nav-item"><a href="about.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
-                    onmouseout="this.style.color='black';">About</a></li>
-                  <li class="nav-item active"><a href="services.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
-                    onmouseout="this.style.color='black';">Services</a></li>
+                  <li class="nav-item"> <a href="index.html" class="nav-link" style="color: white;" onmouseover="this.style.color='var(--yellow)';"
+                    onmouseout="this.style.color='white';">Home</a></a></li>
+                  <li class="nav-item"><a href="about.html" class="nav-link" style="color: white;" onmouseover="this.style.color='var(--yellow)';"
+                    onmouseout="this.style.color='white';">About</a></li>
+                    <li class="nav-item active">
+                      <a href="services.html" class="nav-link home-link" style="color: var(--yellow);">
+                        Services
+                      </a>
+                    </li>
+                    
                   
-                  <li class="nav-item"><a href="car.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
-                    onmouseout="this.style.color='black';">Our Cars</a></li>
-                  <li class="nav-item"><a href="pricing.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
-                    onmouseout="this.style.color='black';">Pricing</a></li>
-                  <li class="nav-item"><a href="contact.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
-                    onmouseout="this.style.color='black';">Contact</a></li>
+                  <li class="nav-item"><a href="car.html" class="nav-link" style="color:white;" onmouseover="this.style.color='var(--yellow)';"
+                    onmouseout="this.style.color='white';">Our Cars</a></li>
+                  <li class="nav-item"><a href="pricing.html" class="nav-link" style="color: white;" onmouseover="this.style.color='var(--yellow)';"
+                    onmouseout="this.style.color='white';">Pricing</a></li>
+                  <li class="nav-item"><a href="contact.html" class="nav-link" style="color: white;" onmouseover="this.style.color='var(--yellow)';"
+                    onmouseout="this.style.color='white';">Contact</a></li>
                   </ul>
             </div>
         </div>
     </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/service.jpg' );"data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/service_.avif' );"data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
@@ -124,121 +136,139 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-            <span class="subheading">
-              <h4 style="color:blue;"><b>Services</b></h4>
-            </span>
-            <h2 class="mb-3"><b>Our Latest Services</b></h2>
+            <span class="subheading"><h3 style="color:blue;"><b>SERVICES</b></h4></span>
+            <h4 class="mb-3">Our Latest Services</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-            <div class="services-card text-center p-3 " style="border: 2px solid black; border-radius: 8px;">
-              <div class="icon-container d-flex align-items-center justify-content-center mb-2">
-                <span class="fas fa-taxi" style="color: black;"></span>
-              </div>
+         <div class="row">
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="card custom-card text-center w-100 " style="background:#fff; border: none;box-shadow: rgba(247, 235, 1, 0.2) 0px 7px 29px 0px;">
               <div class="card-body">
-                <h3 class="heading mb-2" style="color: black;"><b>Local Car Rentals</b></h3>
-                <p style="color: black;">Discover convenient local car rental services tailored to your needs, ensuring seamless transportation for every journey.</p>
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <div style="background-color: white; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; box-shadow: 0 0 15px 5px rgba(196, 194, 194, 0.3);">
+                    <span class="fas fa-taxi" style="color: var(--yellow); font-size: 30px;"></span>
+                  </div>
+                  <!-- <span class="fas fa-taxi" style="color:var(--yellow); font-size: 30px;"></span> Ensure this is the correct class for the icon -->
+                </div>
+                <div class="text w-100">
+                  <h5 class="mb-2" style="color: black; font: size 5px;">Local Car Rentals</h5>
+                  <p class="mb-2" style="color: rgb(129, 129, 129); font: size 8px;">Discover convenient local car rental services tailored to your needs, ensuring seamless transportation for every journey.</p>
+                </div>
               </div>
             </div>
           </div>
     
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-            <div class="services-card text-center p-3 " style="border: 2px solid black; border-radius: 8px;">
-              <div class="icon-container d-flex align-items-center justify-content-center mb-2">
-                <span class="fas fa-car" style="color: black;"></span>
-              </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="card custom-card text-center w-100 " style="background:#fff; border: none;box-shadow: rgba(247, 235, 1, 0.2) 0px 7px 29px 0px;">
               <div class="card-body">
-                <h3 class="heading mb-2" style="color: black;"><b>Airport Taxi</b></h3>
-                <p style="color: black;">Reliable local airport taxi service providing prompt and comfortable transportation to and from airports, ensuring a stress-free travel experience.</p>
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <div style="background-color: white; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; box-shadow: 0 0 15px 5px rgba(196, 194, 194, 0.3);">
+                    <span class="fas fa-car" style="color: var(--yellow); font-size: 30px;"></span>
+                  </div>
+                  <!-- <span class="fas fa-car" style="color:var(--yellow); font-size: 30px;"></span> Ensure this is the correct class for the icon -->
+                </div>
+                <div class="text w-100">
+                  <h5 class="mb-2" style="color:black; font: size 5px;">Airport Taxi</h5>
+                  <p class="mb-2" style="color: rgb(129, 129, 129); font: size 8px;">Reliable local airport taxi service providing prompt and comfortable transportation to and from airports, ensuring a stress-free travel experience.</p>
+                </div>
               </div>
             </div>
-          </div>
+          </div> 
     
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-            <div class="services-card text-center p-3" style="border: 2px solid black; border-radius: 8px;">
-              <div class="icon-container d-flex align-items-center justify-content-center mb-2">
-                <span class="fas fa-map-marker-alt" style="color: black;"></span>
-              </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="card custom-card text-center w-100 " style="background:#fff; border: none;box-shadow: rgba(247, 235, 1, 0.2) 0px 7px 29px 0px;">
               <div class="card-body">
-                <h3 class="heading mb-2" style="color: black;"><b>Out Station Taxi</b></h3>
-                <p style="color: black;">Experience seamless travel between cities with our trusted outstation taxi service, featuring comfortable rides, experienced drivers, and competitive pricing to ensure a stress-free journey.</p>
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <div style="background-color: white; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; box-shadow: 0 0 15px 5px rgba(196, 194, 194, 0.3);">
+                    <span class="fas fa-map-marker-alt" style="color: var(--yellow); font-size: 30px;"></span>
+                  </div>
+                  <!-- <span class="fas fa-map-marker-alt" style="color:var(--yellow); font-size: 30px;"></span> Ensure this is the correct class for the icon -->
+                </div>
+                <div class="text w-100">
+                  <h5 class="mb-2" style="color:black; font: size 5px;">Out Station Taxi</h5>
+                  <p class="mb-2" style="color: rgb(129, 129, 129); font: size 8px;">Experience seamless travel between cities with our trusted outstation taxi service, featuring comfortable rides and experienced drivers to ensure a stress-free journey.</p>
+                </div>
               </div>
             </div>
-          </div>
+          </div> 
     
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-            <div class="services-card text-center p-3" style="border: 2px solid black; border-radius: 8px;">
-              <div class="icon-container d-flex align-items-center justify-content-center mb-2">
-                <span class="fas fa-building" style="color: black;"></span>
-              </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="card custom-card text-center w-100 " style="background:#fff; border: none;box-shadow: rgba(247, 235, 1, 0.2) 0px 7px 29px 0px;">
               <div class="card-body">
-                <h3 class="heading mb-2" style="color: black;"><b>Corporate Car Rental</b></h3>
-                <p style="color: black;">Elevate your business travel experience with our dedicated corporate car rental service, offering tailored solutions, premium vehicles, and seamless booking management to support your professional needs.</p>
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <div style="background-color: white; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; box-shadow: 0 0 15px 5px rgba(196, 194, 194, 0.3);">
+                    <span class="fas fa-taxi" style="color: var(--yellow); font-size: 30px;"></span>
+                  </div>
+                  
+                  <!-- <span class="fas fa-taxi" style="color:var(--yellow); font-size: 30px;"></span> Ensure this is the correct class for the icon -->
+                </div>
+                <div class="text w-100">
+                  <h5 class="mb-2" style="color: black; font: size 5px;">Corporate Car Rental</h5>
+                  <p class="mb-2" style="color: rgb(129, 129, 129); font: size 8px;">Elevate your business travel experience with our dedicated corporate car rental service, offering tailored solutions and premium vehicles.</p>
+                </div>
               </div>
             </div>
-          </div>
+          </div> 
         </div>
       </div>
     </section>
     
       
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2"><a href="#" class="logo"><span style="color:black;">City</span><span style="color:var(--yellow);">Drivers</span></a></h2>
-                        <p>Reliable rides, anytime, anywhere - Your journey, our priority.</p>
-                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4 ml-md-5">
-                        <h2 class="ftco-heading-2">Explore</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="about.html" class="py-2 d-block">About</a></li>
-                            <li><a href="services.html" class="py-2 d-block">Services</a></li>
-                           
-                            <li><a href="contact.html" class="py-2 d-block">Our Cars</a></li>
-                            <li><a href="pricing.html" class="py-2 d-block">Pricing</a></li>
-                            <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Help</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Terms & Conditions</a></li>
-                            <li><a href="#" class="py-2 d-block">Privacy Policy</a></li>
-                            <li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Have a Questions?</h2>
-                        <div class="block-23 mb-3">
-                            <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">123 Street Kerala, India</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 2323232323/span></a></li>
-                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@citydrivers.com</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <footer class="ftco-footer ftco-bg-dark ftco-section" style="background-color:  #00274D">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2"><a href="#" class="logo"> <span style="color:black;">City</span><span style="color:var(--yellow);">Drivers</span></a></h2>
+              <p>Reliable rides, anytime, anywhere - Your journey, our priority.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
             </div>
-            <div class="container copyright text-center mt-4">
-                <p>© <span>Copyright</span> <strong class="px-1 sitename">City Drivers</strong> <span>All Rights Reserved</span></p>
-                
+          </div>
+
+          <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Information</h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="py-2 d-block">Home</a></li>
+                    <li><a href="#" class="py-2 d-block">About</a></li>
+                    <li><a href="#" class="py-2 d-block">Services</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="py-2 d-block">Our Cars</a></li>
+                    <li><a href="#" class="py-2 d-block">Pricing</a></li>
+                    <li><a href="#" class="py-2 d-block">Contact</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
+          </div>
+          
+          <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Connect With Us</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon icon-map-marker"></span><span class="text">123 Street Kerala, India</span></li>
+                  <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 2323232323</span></a></li>
+                  <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@citydrivers.com</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    
+      <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">City Drivers</strong> <span>All Rights Reserved</span></p>
+      </div>
     </footer>
 
     

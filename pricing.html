@@ -33,6 +33,14 @@
         .navbar {
           padding: 0,0,0,0; /* Adjust padding if needed */
         }
+
+		.nav-item.active .nav-link.home-link {
+  color: var(--yellow);
+}
+
+.nav-item.active .nav-link.home-link:hover {
+  color: var(--yellow);
+}
       </style>
   </head>
   <body>
@@ -49,19 +57,23 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-				<li class="nav-item "> <a href="index.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
-					onmouseout="this.style.color='black';">Home</a></a></li>
-				  <li class="nav-item"><a href="about.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
-					onmouseout="this.style.color='black';">About</a></li>
-				  <li class="nav-item"><a href="services.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
-					onmouseout="this.style.color='black';">Services</a></li>
+				<li class="nav-item "> <a href="index.html" class="nav-link" style="color: white;" onmouseover="this.style.color='var(--yellow)';"
+					onmouseout="this.style.color='white';">Home</a></a></li>
+				  <li class="nav-item"><a href="about.html" class="nav-link" style="color: white;" onmouseover="this.style.color='var(--yellow)';"
+					onmouseout="this.style.color='white';">About</a></li>
+				  <li class="nav-item"><a href="services.html" class="nav-link" style="color: white;" onmouseover="this.style.color='var(--yellow)';"
+					onmouseout="this.style.color='white';">Services</a></li>
 				  
-				  <li class="nav-item"><a href="car.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
-					onmouseout="this.style.color='black';">Our Cars</a></li>
-				  <li class="nav-item active"><a href="pricing.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
-					onmouseout="this.style.color='black';">Pricing</a></li>
-				  <li class="nav-item"><a href="contact.html" class="nav-link" style="color: black;" onmouseover="this.style.color='var(--yellow)';"
-					onmouseout="this.style.color='black';">Contact</a></li>
+				  <li class="nav-item"><a href="car.html" class="nav-link" style="color: white;" onmouseover="this.style.color='var(--yellow)';"
+					onmouseout="this.style.color='white';">Our Cars</a></li>
+					<li class="nav-item active">
+						<a href="pricing.html" class="nav-link home-link" style="color: var(--yellow);">
+						  Pricing
+						</a>
+					  </li>
+					  
+				  <li class="nav-item"><a href="contact.html" class="nav-link" style="color: white;" onmouseover="this.style.color='var(--yellow)';"
+					onmouseout="this.style.color='white';">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -340,62 +352,62 @@
 	  </section>
 	  
 	  
-	  <footer class="ftco-footer ftco-bg-dark ftco-section">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2"><a href="#" class="logo"><span style="color:black;">City</span><span style="color:var(--yellow);">Drivers</span></a></h2>
-                        <p>Reliable rides, anytime, anywhere - Your journey, our priority.</p>
-                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4 ml-md-5">
-                        <h2 class="ftco-heading-2">Explore</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="about.html" class="py-2 d-block">About</a></li>
-                            <li><a href="services.html" class="py-2 d-block">Services</a></li>
-                            <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
-                            <li><a href="contact.html" class="py-2 d-block">Our Cars</a></li>
-                            <li><a href="pricing.html" class="py-2 d-block">Pricing</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Help</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Terms & Conditions</a></li>
-                            <li><a href="#" class="py-2 d-block">Privacy Policy</a></li>
-                            <li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Have a Questions?</h2>
-                        <div class="block-23 mb-3">
-                            <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">123 Street Kerala, India</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 2323232323/span></a></li>
-                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@citydrivers.com</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container copyright text-center mt-4">
-                <p>© <span>Copyright</span> <strong class="px-1 sitename">City Drivers</strong> <span>All Rights Reserved</span></p>
-                
-              </div>
-            </div>
-        </div>
-    </footer>
+	  <footer class="ftco-footer ftco-bg-dark ftco-section" style="background-color:  #00274D">
+		<div class="container">
+		  <div class="row mb-5">
+			<div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+			  <div class="ftco-footer-widget mb-4">
+				<h2 class="ftco-heading-2"><a href="#" class="logo"> <span style="color:black;">City</span><span style="color:var(--yellow);">Drivers</span></a></h2>
+				<p>Reliable rides, anytime, anywhere - Your journey, our priority.</p>
+				<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+				  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+				  <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+				  <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+				</ul>
+			  </div>
+			</div>
+  
+			<div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+			  <div class="ftco-footer-widget mb-4">
+				<h2 class="ftco-heading-2">Information</h2>
+				<div class="row">
+				  <div class="col-md-6">
+					<ul class="list-unstyled">
+					  <li><a href="#" class="py-2 d-block">Home</a></li>
+					  <li><a href="#" class="py-2 d-block">About</a></li>
+					  <li><a href="#" class="py-2 d-block">Services</a></li>
+					</ul>
+				  </div>
+				  <div class="col-md-6">
+					<ul class="list-unstyled">
+					  <li><a href="#" class="py-2 d-block">Our Cars</a></li>
+					  <li><a href="#" class="py-2 d-block">Pricing</a></li>
+					  <li><a href="#" class="py-2 d-block">Contact</a></li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+			  <div class="ftco-footer-widget mb-4">
+				<h2 class="ftco-heading-2">Connect With Us</h2>
+				<div class="block-23 mb-3">
+				  <ul>
+					<li><span class="icon icon-map-marker"></span><span class="text">123 Street Kerala, India</span></li>
+					<li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 2323232323</span></a></li>
+					<li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@citydrivers.com</span></a></li>
+				  </ul>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  
+		<div class="container copyright text-center mt-4">
+		  <p>© <span>Copyright</span> <strong class="px-1 sitename">City Drivers</strong> <span>All Rights Reserved</span></p>
+		</div>
+	  </footer>
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
